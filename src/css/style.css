@@ -267,7 +267,7 @@ p {
   font-size: 10px;
   font-weight: var(--font-weight-title);
   padding: 0rem 1rem;
-  color: var(--color-dark);
+  color: var(--color-dark) !important;
 }
 .ntt-navadd {
   color: var(--color-dark);
@@ -363,6 +363,7 @@ p {
     text-transform: uppercase !important;
     font-size: 10px;
     font-weight: var(--font-weight-title);
+    color: var(--color-dark);
   }
   .mobile-menu-show .ntt-mobile-menulist {
     display: block;
