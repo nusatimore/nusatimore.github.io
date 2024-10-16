@@ -20,6 +20,7 @@
   /* {FontFamily} */
   --font-family: "Inter", sans-serif;
   --font-optical-size: auto;
+  --font-Size-nav: 10px;
   /* {FontSize} */
   --font-Size-title: 2.4rem;
   --font-Size-subtitle: 1.4rem;
@@ -253,14 +254,17 @@ p {
 }
 .ntt-navlink {
   text-decoration: none;
-  font-size: var(--font-Size-desc);
+  font-size: var(--font-Size-nav);
+  font-weight: var(--font-weight-title);
   padding: 0rem 1rem;
+  text-transform: uppercase;
   color: var(--color-dark) !important;
 }
 .ntt-navadd {
   color: var(--color-dark);
-  font-size: var(--font-Size-desc);
-  font-weight: var(--font-weight-desc);
+  font-size: var(--font-Size-nav);
+  text-transform: uppercase;
+  font-weight: var(--font-weight-title);
   text-align: end;
 }
 .ntt-nav-add {
@@ -354,8 +358,9 @@ p {
   }
   .mobile-menu-show .ntt-mobile-menulist a {
     gap: 10px;
-    font-size: var(--font-Size-desc);
-    font-weight: var(--font-weight-desc);
+    text-transform: uppercase;
+    font-size: var(--font-Size-nav);
+    font-weight: var(--font-weight-title);
     color: var(--color-dark);
   }
   .mobile-menu-show .ntt-mobile-menulist {
