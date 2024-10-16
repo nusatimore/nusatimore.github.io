@@ -276,14 +276,7 @@ p {
   font-weight: var(--font-weight-title);
   text-align: end;
 }
-.ntt-nav-add svg {
-  height: 15px;
-  width: 15px;
-  color: var(--color-dark);
-}
-.ntt-nav-add .ntt-navadd {
-  padding-left: 1rem;
-}
+
 .ntt-nav-add {
   display: flex;
   align-items: center;
