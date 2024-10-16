@@ -153,7 +153,7 @@
           <!--{services}-->
           <section id="services">
             <!-- grid -->
-            <article class="services_ntt_list top-section">
+            <div class="services_ntt_list top-section">
               <div class="grid">
                 <div class="services_ntt-box">
                   <div class="services_ntt-wrapper">
@@ -219,9 +219,9 @@
                   </div>
                 </div>
               </div>
-            </article>
+            </div>
             <!-- grid -->
-            <article class="article">
+            <div class="article">
               <div class="grid-article">
                 <div class="articles_list">
                   <div class="grid">
@@ -261,7 +261,7 @@
                       </div>
                     </div>
                   </div>
-                  <article id="article-box">
+                  <div id="article-box">
                     <div class="article-box">
                       <div class="article-wrapper">
                         <div
@@ -295,10 +295,10 @@
                         </div>
                       </div>
                     </div>
-                  </article>
+                  </div>
                 </div>
               </div>
-            </article>
+            </div>
           </section>
           <!--{services}-->
           <!--{team}-->
@@ -571,13 +571,18 @@
                               </div>
                               <div class="ntt_arw_rapper">
                                 <img
-                                  src="./public/shapes/arrow_white.svg"
-                                  class="arrow_ntt_wt"
-                                  style="opacity: 0"
-                                /><img
                                   src="./public/shapes/arrow_black.svg"
+                                  class="arrow_ntt_loct"
+                                  style="
+                                    transform: rotate(-45deg);
+                                    -webkit-transform: rotate(-45deg);
+                                    -moz-transform: rotate(-45deg);
+                                    -ms-transform: rotate(-45deg);
+                                    -o-transform: rotate(-45deg);
+                                  "
+                                /><img
+                                  src="./public/img/location.png"
                                   class="arrow_ntt_bk"
-                                  style="opacity: 1"
                                 />
                               </div></div
                           ></a>
