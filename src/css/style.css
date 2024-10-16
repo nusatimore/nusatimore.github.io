@@ -995,7 +995,6 @@ p {
   display: flex;
   position: relative;
 }
-
 .ntt_cta:hover .arrow_ntt_loct {
   opacity: 0;
 }
@@ -1013,7 +1012,6 @@ p {
     height: auto;
   }
 }
-
 .ntt_cta:hover .arrow_ntt_bk {
   width: 4.604vw;
   max-width: none;
