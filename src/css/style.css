@@ -1,6 +1,7 @@
 :root {
   /* {Color::style} */
   --color-dark: #380a53;
+  --color-dark-20: #380a5349;
   --color-dark-56: #380a538f;
   --color-dark-70: #380a53e0;
   --color-light: #fff4e0;
@@ -15,6 +16,7 @@
   --color-yellow-70: rgba(255, 204, 0, 0.747);
   --color-yellow-darker: rgb(255, 145, 0);
   --color-aquamarine: #0fb;
+  --color-ocean: #261c6e;
   /* {FontFamily} */
   --font-family: "Inter", sans-serif;
   --font-optical-size: auto;
@@ -200,17 +202,48 @@ p {
   -o-transition: all 0.4s ease-in-out;
 }
 .ntt-nav {
-  padding: 0rem 0.7rem;
   display: flex;
   position: fixed;
-  top: 0;
+  top: 1rem;
+  left: 2rem;
+  right: 2rem;
+  padding: 0.5rem;
   z-index: 1010;
-  width: 100%;
+  width: auto;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--color-light-64);
-  backdrop-filter: blur(15px);
+  background-color: var(--color-light);
+  border: 1px solid var(--color-dark-20);
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
 }
+.ntt_nav-brand {
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+.ntt_nav-brand .rotating-item,
+.ntt_nav-brand .rotating-item svg {
+  width: 40px;
+  color: var(--color-ocean);
+  height: 40px;
+  transition: transform 0.2s ease;
+  -webkit-transition: transform 0.2s ease;
+  -moz-transition: transform 0.2s ease;
+  -ms-transition: transform 0.2s ease;
+  -o-transition: transform 0.2s ease;
+}
+.ntt_nav-brand img {
+  width: auto;
+  top: -40px;
+  left: 1px;
+  position: relative;
+  height: 40px;
+}
+
 .ntt-nav-menu {
   text-align: center;
 }
@@ -305,13 +338,14 @@ p {
     justify-content: center;
     display: block;
     position: fixed;
-    top: 70px;
-    left: 40px;
-    right: 40px;
-    background-color: var(--color-light-64);
+    top: 80px;
+    left: 35px;
+    right: 35px;
+    background-color: var(--color-light);
     backdrop-filter: blur(15px);
     height: 100px;
     z-index: 1010;
+    border: 1px solid var(--color-dark-20);
     border-radius: 1rem;
     -webkit-border-radius: 1rem;
     -moz-border-radius: 1rem;
@@ -320,7 +354,6 @@ p {
   }
   .mobile-menu-show .ntt-mobile-menulist a {
     gap: 10px;
-
     font-size: var(--font-Size-desc);
     font-weight: var(--font-weight-desc);
     color: var(--color-dark);
