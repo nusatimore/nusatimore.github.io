@@ -1,17 +1,3 @@
-//==>Header Scroll Blur<==//
-$(document).ready(function () {
-  $(window).scroll(function (e) {
-    let s = $(window).scrollTop(),
-      filterVal = s === 0 ? 0 : Math.ceil(s / 11);
-    $(".blur").css({
-      filter: "blur(" + filterVal + "px)",
-      "-webkit-filter": "blur(" + filterVal + "px)",
-      "-moz-filter": "blur(" + filterVal + "px)",
-      "-o-filter": "blur(" + filterVal + "px)",
-      "-ms-filter": "blur(" + filterVal + "px)",
-    });
-  });
-});
 //==>Hamburger Menu show<==//
 const hamBurger = document.querySelector(".hamburger");
 const hamBurger1 = document.querySelector("#hamburger-1");
