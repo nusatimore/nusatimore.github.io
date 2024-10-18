@@ -160,6 +160,11 @@ p {
   -moz-border-radius: 2.5rem;
   -ms-border-radius: 2.5rem;
   -o-border-radius: 2.5rem;
+  transition: all 0.9s;
+  -webkit-transition: all 0.9s;
+  -moz-transition: all 0.9s;
+  -ms-transition: all 0.9s;
+  -o-transition: all 0.9s;
 }
 @media only screen and (max-width: 991px) {
   /* {home::title} */
@@ -266,6 +271,11 @@ p {
   -moz-border-radius: 0.5rem;
   -ms-border-radius: 0.5rem;
   -o-border-radius: 0.5rem;
+  transition: all 0.9s;
+  -webkit-transition: all 0.9s;
+  -moz-transition: all 0.9s;
+  -ms-transition: all 0.9s;
+  -o-transition: all 0.9s;
 }
 .ntt-nav-add {
   display: flex;
@@ -711,6 +721,12 @@ p {
 .ntt_swiper .product-grid:hover {
   border: 1px solid var(--color-border-hover);
 }
+.pic-1,
+.pic-2 {
+  background-image: url(/public/swipper/shadow.png);
+  background-size: cover;
+}
+
 .ntt_swiper .product-grid {
   text-align: center;
   overflow: hidden;
