@@ -1181,8 +1181,30 @@ p {
   font-size: var(--font-Size-desc);
 }
 .ntt-footer .footer-copyright p {
-  margin-bottom: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
+.ntt-contact-subtitle .marg {
+  padding: 1rem;
+  color: var(--color-light);
+}
+.ntt-contact-subtitle .ntt_footer-qlinks {
+  padding: 0.5rem;
+  margin-top: 1rem;
+  text-align: center;
+  color: var(--color-light);
+  font-size: var(--font-Size-desc);
+  font-weight: var(--font-Size-desc);
+}
+.ntt-contact-subtitle .ntt_footer-qlinks .fa {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  color: var(--color-light);
+}
+
 .table {
   display: table;
   width: 100%;
