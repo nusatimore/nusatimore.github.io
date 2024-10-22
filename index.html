@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="smooth">
+<html lang="en">
   <head>
     <!--{meta}-->
     <meta charset="UTF-8" />
@@ -35,6 +35,8 @@
     />
     <link rel="stylesheet" href="./src/dist/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./src/dist/fontawesome-free/css/all.css" />
+    <link rel="stylesheet" href="./src/dist/animation/animate.min.css" />
+    <link rel="stylesheet" href="./src/dist/fancybox/fancybox.min.css" />
     <link rel="stylesheet" href="./src/css/style.css" />
     <!-- {custom} -->
     <style type="text/css">
@@ -47,6 +49,13 @@
     <!--{styles}-->
   </head>
   <body>
+    <div class="table">
+      <div class="lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </div>
     <!--{header}-->
     <header>
       <!--{home}-->
@@ -55,8 +64,13 @@
           <div class="container ntt-padding">
             <div class="row content-home">
               <div class="home-title">
-                <h1>We Provide</h1>
-                <h2>Best Services</h2>
+                <button class="ntt_title">
+                  <span>
+                    <h1>We Provide</h1>
+                    <br />
+                    <h2>Best Services</h2></span
+                  >
+                </button>
               </div>
               <div class="home-subtitle">
                 <p>
@@ -72,9 +86,14 @@
                   target="_blank"
                   href="https://nusatimoretelematika.gitbook.io/docs/"
                 >
-                  <span>Overview</span> Nusa Timore
+                  <span>Overview</span> Nusa Timore Telematika
                   <i class="fa fa-arrow-right"></i>
                 </a>
+              </div>
+
+              <div class="scroll-down">
+                <small>SCROLL DOWN</small>
+                <span></span>
               </div>
             </div>
           </div>
@@ -84,7 +103,6 @@
     </header>
     <!--{header}-->
     <!--{nav}-->
-
     <nav class="ntt-nav">
       <a href="#home" class="ntt_nav-brand">
         <div class="rotating-item" id="gear">
@@ -129,6 +147,11 @@
           </svg>
         </div>
         <img src="./public/favicon/NTT-PL-1024x488 rotate.png" alt="ntt-logo" />
+        <img
+          class="svg-text"
+          src="./public/favicon/nt-text.png"
+          alt="ntt-logo"
+        />
       </a>
       <div class="ntt-nav-menu">
         <ul class="ntt-nav-menulist">
@@ -233,7 +256,6 @@
         </li>
       </ul>
     </div>
-
     <!--{nav}-->
     <!--{ntt=page}-->
     <main class="ntt-page overflow-hidden">
@@ -318,7 +340,7 @@
                   </div>
                   <div class="ntt_services-item-content">
                     <div class="ntt_services-item-text">
-                      <h3><span>Nusa Timore</span> - Telco Infra Services</h3>
+                      <h3><span>Telco</span> Infra Services</h3>
                       <p>Survey, Design & Planning (As Plan Drawing)</p>
                       <p>Permit & SITAC</p>
                       <p>End to End Implementation & Monitoring</p>
@@ -348,7 +370,7 @@
                   </div>
                   <div class="ntt_services-item-content">
                     <div class="ntt_services-item-text">
-                      <h3><span>Nusa Timore</span> - IT Services</h3>
+                      <h3><span>IT</span> Services</h3>
                       <p>Manage IT Services</p>
                       <p>Monitoring Services</p>
                       <p>Remote Support</p>
@@ -371,6 +393,24 @@
           </div>
         </section>
         <!--{services}-->
+        <!--{calltoaction}-->
+        <section class="client top-section">
+          <div class="ntt_client-title">
+            <h1>Nusa Timore Client</h1>
+          </div>
+          <div class="ntt_cta-1">
+            <div class="ntt_cta-2">
+              <div class="cta-console">
+                <div class="cta-console-wrapper">
+                  <div class="cta-console-content">
+                    <h1>Isikan logo Client / swipper slide</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--{calltoaction}-->
         <!--{team}-->
         <section id="team">
           <div class="team_ntt_list top-section">
@@ -549,6 +589,7 @@
           <!--{teams::swipper}-->
         </section>
         <!--{team}-->
+
         <!--{contact}-->
         <section id="contact" class="top-section">
           <div class="ntt_contact_list">
@@ -674,5 +715,83 @@
       });
     </script>
     <!--{script}-->
+    <script>
+      /*3D CSS Buttons which Move as you Mouse Over*/
+      let calculateAngle = function (e, item, parent) {
+        let dropShadowColor = `rgba(0, 0, 0, 0.096)`;
+        // If the button has a data-filter-color attribute, then use this for the shadow's color
+        if (parent.getAttribute("data-filter-color") !== null) {
+          dropShadowColor = parent.getAttribute("data-filter-color");
+        }
+        // If the button has a data-custom-perspective attribute, then use this as the perspective.
+        if (parent.getAttribute("data-custom-perspective") !== null) {
+          parent.style.perspective = `${parent.getAttribute(
+            "data-custom-perspective"
+          )}`;
+        }
+        // Get the x position of the users mouse, relative to the button itself
+        let x = Math.abs(item.getBoundingClientRect().x - e.clientX);
+        // Get the y position relative to the button
+        let y = Math.abs(item.getBoundingClientRect().y - e.clientY);
+
+        // Calculate half the width and height
+        let halfWidth = item.getBoundingClientRect().width / 2;
+        let halfHeight = item.getBoundingClientRect().height / 2;
+
+        // Use this to create an angle. I have divided by 6 and 4 respectively so the effect looks good.
+        // Changing these numbers will change the depth of the effect.
+        let calcAngleX = (x - halfWidth) / 16;
+        let calcAngleY = (y - halfHeight) / 14;
+
+        // Set the items transform CSS property
+        item.style.transform = `rotateY(${calcAngleX}deg) rotateX(${calcAngleY}deg) scale(1.15)`;
+
+        // And set its container's perspective.
+        parent.style.perspective = `${halfWidth * 2}px`;
+        item.style.perspective = `${halfWidth * 3}px`;
+
+        // Reapply this to the shadow, with different dividers
+        let calcShadowX = (x - halfWidth) / 2;
+        let calcShadowY = (y - halfHeight) / 2;
+
+        // Add a filter shadow - this is more performant to animate than a regular box shadow.
+        item.style.filter = `drop-shadow(${-calcShadowX}px ${calcShadowY}px 15px ${dropShadowColor})`;
+      };
+
+      document.querySelectorAll(".ntt_title").forEach(function (item) {
+        // Add on mouseenter
+        item.addEventListener("mouseenter", function (e) {
+          calculateAngle(e, this.querySelector("span"), this);
+        });
+        // Add on mousemove
+        item.addEventListener("mousemove", function (e) {
+          calculateAngle(e, this.querySelector("span"), this);
+        });
+
+        // Reset everything on mouse leave
+        item.addEventListener("mouseleave", function (e) {
+          let dropShadowColor = `rgba(0, 0, 0, 0.096)`;
+          if (item.getAttribute("data-filter-color") !== null) {
+            dropShadowColor = item.getAttribute("data-filter-color");
+          }
+          item.querySelector(
+            "span"
+          ).style.transform = `rotateY(0deg) rotateX(0deg) scale(1)`;
+          item.querySelector(
+            "span"
+          ).style.filter = `drop-shadow(0 10px 15px ${dropShadowColor})`;
+        });
+      });
+    </script>
+    <script>
+      // PAGE HEADER FADE
+      var divs = $("header");
+      $(window).on("scroll", function () {
+        var st = $(this).scrollTop();
+        divs.css({ opacity: 1 - st / 400 });
+        divs.css({ "transition-delay": "0s" });
+        divs.css({ transition: "0.01s ease-in-out" });
+      });
+    </script>
   </body>
 </html>
