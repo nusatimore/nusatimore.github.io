@@ -641,7 +641,7 @@ header .scroll-down span::before {
 }
 .ntt_services-item-wrapper {
   z-index: 1;
-  background: linear-gradient(#ffffff, #ebe6df1a);
+  background: linear-gradient(#fff4e0, #ebe6df1a);
   border-radius: 1.5rem;
   flex-direction: column;
   flex: 1;
