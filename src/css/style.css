@@ -314,6 +314,13 @@ p {
   -moz-border-radius: 1rem;
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
+  /* style for 3d box */
+  box-shadow: 0 -0.5px 1px var(--color-dark-50) inset,
+    0 1px 1px -0.5px var(--color-dark-50), 0 3px 3px -1.5px var(--color-dark-50),
+    0 6px 6px -3px var(--color-dark-50), 0 12px 12px -6px var(--color-dark-50),
+    0 24px 24px -12px var(--color-dark-50),
+    0 32px 32px -16px var(--color-dark-25),
+    0 44px 44px -16px var(--color-dark-25);
 }
 .ntt_nav-brand {
   align-items: center;
@@ -604,6 +611,13 @@ p {
   -moz-transition: all ease-in-out 0.5s;
   -ms-transition: all ease-in-out 0.5s;
   -o-transition: all ease-in-out 0.5s;
+  /* style for 3d box */
+  box-shadow: 0 -0.5px 1px var(--color-dark-50) inset,
+    0 1px 1px -0.5px var(--color-dark-50), 0 3px 3px -1.5px var(--color-dark-50),
+    0 6px 6px -3px var(--color-dark-50), 0 12px 12px -6px var(--color-dark-50),
+    0 24px 24px -12px var(--color-dark-50),
+    0 32px 32px -16px var(--color-dark-25),
+    0 44px 44px -16px var(--color-dark-25);
 }
 .ntt_services-item-wrapper {
   z-index: 1;
@@ -670,6 +684,13 @@ p {
 .ntt_services-item-box .btn-title:hover {
   border: 1px solid var(--color-border-hover);
   box-shadow: var(--color-dark);
+  /* style for 3d box */
+  box-shadow: 0 -0.5px 1px var(--color-dark-50) inset,
+    0 1px 1px -0.5px var(--color-dark-50), 0 3px 3px -1.5px var(--color-dark-50),
+    0 6px 6px -3px var(--color-dark-50), 0 12px 12px -6px var(--color-dark-50),
+    0 24px 24px -12px var(--color-dark-50),
+    0 32px 32px -16px var(--color-dark-25),
+    0 44px 44px -16px var(--color-dark-25);
 }
 .ntt_services-item-box .btn-title {
   background-color: #fff4e012;
@@ -861,6 +882,13 @@ p {
   -moz-border-radius: 1rem;
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
+  /* style for 3d box */
+  box-shadow: 0 -0.5px 1px var(--color-dark-50) inset,
+    0 1px 1px -0.5px var(--color-dark-50), 0 3px 3px -1.5px var(--color-dark-50),
+    0 6px 6px -3px var(--color-dark-50), 0 12px 12px -6px var(--color-dark-50),
+    0 24px 24px -12px var(--color-dark-50),
+    0 32px 32px -16px var(--color-dark-25),
+    0 44px 44px -16px var(--color-dark-25);
 }
 .ntt_swiper .product-grid:before {
   content: "";
@@ -921,6 +949,7 @@ p {
   border-top-right-radius: 2rem !important;
   padding: 1rem;
   text-align: center;
+  margin-top: -20px;
 }
 /* {contact::grid} */
 .ntt_contact_list {
@@ -1085,7 +1114,7 @@ p {
   z-index: 3;
 }
 .ntt_tag {
-  color: var(--color-dark);
+  color: var(--color-light);
   z-index: 4;
   top: 30%;
   right: 22%;
@@ -1105,6 +1134,14 @@ p {
   -moz-transform: rotate(-7deg);
   -ms-transform: rotate(-7deg);
   -o-transform: rotate(-7deg);
+
+  /* style for 3d box */
+  box-shadow: 0 -0.5px 1px var(--color-dark-50) inset,
+    0 1px 1px -0.5px var(--color-dark-50), 0 3px 3px -1.5px var(--color-dark-50),
+    0 6px 6px -3px var(--color-dark-50), 0 12px 12px -6px var(--color-dark-50),
+    0 24px 24px -12px var(--color-dark-50),
+    0 32px 32px -16px var(--color-dark-25),
+    0 44px 44px -16px var(--color-dark-25);
 }
 @media only screen and (max-width: 1024px) {
   .ntt_tag {
@@ -1249,20 +1286,22 @@ p {
 .cta-console {
   background: linear-gradient(
       180deg,
-      rgba(255, 255, 255, 0.08) 0%,
-      rgba(255, 255, 255, 0.08) 100%
+      var(--color-dark-25) 0%,
+      var(--color-dark-25) 100%
     ),
-    #090b16;
+    var(--color-dark);
   background: linear-gradient(
       180deg,
       color(display-p3 1 1 1/0) 0%,
       color(display-p3 1 1 1/0.08) 100%
     ),
     color(display-p3 0.036 0.0424 0.084);
-  box-shadow: 0 -0.5px 1px #0e3f7e29 inset, 0 1px 1px -0.5px #1a2d4914,
-    0 3px 3px -1.5px #192e4914, 0 6px 6px -3px #192e4914,
-    0 12px 12px -6px #192e491f, 0 24px 24px -12px #192e491f,
-    0 32px 32px -16px #192e491f, 0 44px 44px -16px #192e491f;
+  box-shadow: 0 -0.5px 1px var(--color-dark-50) inset,
+    0 1px 1px -0.5px var(--color-dark-50), 0 3px 3px -1.5px var(--color-dark-50),
+    0 6px 6px -3px var(--color-dark-50), 0 12px 12px -6px var(--color-dark-50),
+    0 24px 24px -12px var(--color-dark-50),
+    0 32px 32px -16px var(--color-dark-25),
+    0 44px 44px -16px var(--color-dark-25);
   border-radius: 8px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -1283,6 +1322,13 @@ p {
   -o-border-radius: 24px;
   border: var(--color-dark-25);
   background-color: var(--color-light);
+  /* style for 3d box */
+  box-shadow: 0 -0.5px 1px var(--color-dark-50) inset,
+    0 1px 1px -0.5px var(--color-dark-50), 0 3px 3px -1.5px var(--color-dark-50),
+    0 6px 6px -3px var(--color-dark-50), 0 12px 12px -6px var(--color-dark-50),
+    0 24px 24px -12px var(--color-dark-50),
+    0 32px 32px -16px var(--color-dark-25),
+    0 44px 44px -16px var(--color-dark-25);
 }
 .ntt_cta-1::before {
   content: var(--ntt-content-blank);
