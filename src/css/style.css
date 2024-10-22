@@ -1008,6 +1008,9 @@ p {
   color: var(--color-light);
 }
 @media only screen and (max-width: 578px) {
+  .ntt_contact {
+    margin-top: 3rem;
+  }
   .ntt-contact-title {
     height: 70px;
   }
