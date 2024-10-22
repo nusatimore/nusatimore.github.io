@@ -83,6 +83,10 @@ p {
     font-size: 0.7rem;
   }
 }
+.bg-dark {
+  background-color: var(--color-dark-50);
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -112,45 +116,7 @@ p {
   padding-top: 70px;
 }
 /* {header} */
-
 /* {heade::item} */
-header .scroll-down {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  z-index: 3;
-}
-
-header .scroll-down small {
-  width: 120px;
-  display: inline-block;
-  transform: rotate(-90deg);
-  margin-bottom: 50px;
-  color: var(--color-dark);
-}
-header .scroll-down span {
-  display: block;
-  height: 50px;
-  position: relative;
-  transform: translateX(-1px);
-}
-
-header .scroll-down span::before {
-  -webkit-animation: elasticus 1.2s cubic-bezier(1, 0, 0, 1) infinite;
-  -moz-animation: elasticus 1.2s cubic-bezier(1, 0, 0, 1) infinite;
-  -o-animation: elasticus 1.2s cubic-bezier(1, 0, 0, 1) infinite;
-  animation: elasticus 1.2s cubic-bezier(1, 0, 0, 1) infinite;
-}
-header .scroll-down span::before {
-  position: absolute;
-  top: 0px;
-  left: 50%;
-  margin-left: -0.5px;
-  width: 1px;
-  height: 70px;
-  background: var(--color-dark);
-  content: var(--ntt-content-blank);
-}
 .ntt_title {
   box-shadow: none;
   background: transparent;
@@ -232,7 +198,7 @@ header .scroll-down span::before {
   -o-transform: translateX(4px);
 }
 .ntt-home .content-home .btn-title {
-  background-color: #fff4e080;
+  background-color: var(--color-light);
   backdrop-filter: blur(25px);
   padding: 0.6rem 0.6rem 0.6rem 0.15rem;
   border: 1px solid var(--color-border);
@@ -947,6 +913,15 @@ header .scroll-down span::before {
   }
 }
 /* {teams} */
+
+/* {contact} */
+.ntt_contact {
+  background-color: var(--color-dark);
+  border-top-left-radius: 2rem !important;
+  border-top-right-radius: 2rem !important;
+  padding: 1rem;
+  text-align: center;
+}
 /* {contact::grid} */
 .ntt_contact_list {
   grid-column-gap: 1.5rem;
@@ -987,19 +962,21 @@ header .scroll-down span::before {
   overflow: hidden;
 }
 /* {contact::item} */
+
 .ntt-contact-title h1 {
+  padding-top: 2rem;
   font-size: var(--font-Size-title);
   text-transform: uppercase;
-  color: var(--color-dark);
+  color: var(--color-light);
 }
 .ntt-contact-subtitle h4 {
   padding-top: 2.7rem;
   font-size: var(--font-Size-subtitle);
-  color: var(--color-dark);
+  color: var(--color-light);
 }
 .ntt-contact-subtitle p {
   font-size: var(--font-Size-desc);
-  color: var(--color-dark);
+  color: var(--color-light);
 }
 @media only screen and (max-width: 578px) {
   .ntt-contact-title {
@@ -1147,16 +1124,20 @@ header .scroll-down span::before {
 }
 
 /* {footer} */
+.ntt-footer {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 .ntt-footer-bg {
   margin: 0;
   width: 100%;
 }
 .ntt-footer .footer-copyright {
-  background-color: var(--color-light-40);
   backdrop-filter: blur(15px);
-  color: var(--color-dark);
+  color: var(--color-light);
   text-align: center;
   padding: 0;
+  background-color: var(--color-dark);
   width: 100%;
   height: 40px;
   align-content: center;
@@ -1186,7 +1167,7 @@ header .scroll-down span::before {
   height: 100%;
   margin: auto;
   width: 90vw;
-  .line {
+  .linex {
     position: absolute;
     width: 1px;
     height: 100%;
@@ -1238,12 +1219,32 @@ header .scroll-down span::before {
 .client {
   margin: 4rem 0rem;
 }
+@media only screen and (max-width: 920px) {
+  .ntt_client-title h1 {
+    font-size: var(--font-Size-subtitle);
+  }
+  .ntt_client-subtitle p {
+    font-size: var(--font-Size-desc);
+  }
+}
 .ntt_client-title {
-  color: var(--color-dark);
   text-align: center;
-  text-transform: uppercase;
-  font-weight: var(--font-weight-title);
+  padding-bottom: 0.75rem;
+}
+.ntt_client-subtitle {
+  text-align: center;
   padding-bottom: 1rem;
+}
+.ntt_client-title h1 {
+  text-transform: uppercase;
+  color: var(--color-dark);
+  font-weight: var(--font-weight-title);
+  font-size: var(--font-Size-title);
+}
+.ntt_client-title p {
+  color: var(--color-dark);
+  font-weight: var(--font-weight-subtitle);
+  font-size: var(--font-Size-subtitle);
 }
 .cta-console {
   background: linear-gradient(
