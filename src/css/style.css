@@ -291,11 +291,9 @@ p {
 }
 /* {header} */
 /* {nav} */
-
 .ntt-nav:hover {
   border: 1px solid var(--color-border-hover);
 }
-
 .ntt-nav {
   display: flex;
   position: fixed;
