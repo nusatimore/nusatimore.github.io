@@ -144,15 +144,14 @@ p {
 }
 .ntt-home .content-home .home-title h1 {
   color: var(--color-dark);
-  font-size: 5rem;
+  font-size: 3.3rem;
+  text-transform: uppercase;
 }
-.ntt-home .content-home .home-title h2 {
-  color: var(--color-dark);
-  font-size: 5rem;
-}
+
 .ntt-home .content-home .home-subtitle p {
   color: var(--color-dark);
   text-align: center;
+  padding-top: 2rem;
 }
 /* {home::button}  */
 .ntt-home .content-home .home-btn {
@@ -1274,18 +1273,6 @@ p {
   font-size: var(--font-Size-subtitle);
 }
 .cta-console {
-  background: linear-gradient(
-      180deg,
-      var(--color-dark-25) 0%,
-      var(--color-dark-25) 100%
-    ),
-    var(--color-dark);
-  background: linear-gradient(
-      180deg,
-      color(display-p3 1 1 1/0) 0%,
-      color(display-p3 1 1 1/0.08) 100%
-    ),
-    color(display-p3 0.036 0.0424 0.084);
   box-shadow: 0 -0.5px 1px var(--color-dark-50) inset,
     0 1px 1px -0.5px var(--color-dark-50), 0 3px 3px -1.5px var(--color-dark-50),
     0 6px 6px -3px var(--color-dark-50), 0 12px 12px -6px var(--color-dark-50),
@@ -1297,6 +1284,7 @@ p {
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
+  background-color: var(--color-light);
 }
 
 .ntt_cta-1 {
