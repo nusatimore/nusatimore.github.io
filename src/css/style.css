@@ -314,6 +314,25 @@ p {
 .ntt_nav-li {
   display: flex;
 }
+
+#gradient-horizontal {
+  --color-stop-1: #a770ef;
+  --color-stop-2: #cf8bf3;
+  --color-stop-3: #fdb99b;
+}
+#gradient-vertical {
+  --color-stop-1: #00c3ff;
+  --color-stop-2: #77e190;
+  --color-stop-3: #ffff1c;
+}
+#gradient-horizontal {
+  fill: url(#gradient-horizontal) gray;
+  /* We could use it as a stroke fill too:
+  stroke: url(#gradient-horizontal) gray; */
+}
+#gradient-vertical {
+  fill: url(#gradient-vertical) gray;
+}
 .ntt_nav-brand .svg-text {
   width: auto;
   top: -84px;
@@ -1367,7 +1386,7 @@ p {
   align-content: center;
   /* align-content for center logo client */
   color: var(--color-light-75);
-  height: 150px;
+  height: 70px;
   /* height diganti sesuai ukuran logo atau fix pada 150px */
 }
 /*{client}*/
