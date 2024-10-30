@@ -315,24 +315,6 @@ p {
   display: flex;
 }
 
-#gradient-horizontal {
-  --color-stop-1: #a770ef;
-  --color-stop-2: #cf8bf3;
-  --color-stop-3: #fdb99b;
-}
-#gradient-vertical {
-  --color-stop-1: #00c3ff;
-  --color-stop-2: #77e190;
-  --color-stop-3: #ffff1c;
-}
-#gradient-horizontal {
-  fill: url(#gradient-horizontal) gray;
-  /* We could use it as a stroke fill too:
-  stroke: url(#gradient-horizontal) gray; */
-}
-#gradient-vertical {
-  fill: url(#gradient-vertical) gray;
-}
 .ntt_nav-brand .svg-text {
   width: auto;
   top: -84px;
@@ -1275,6 +1257,11 @@ p {
 .client {
   margin: 4rem 0rem;
 }
+@media only screen and (max-width: 480px) {
+  .cta-console-content {
+    height: 110px;
+  }
+}
 @media only screen and (max-width: 920px) {
   .ntt_client-title h1 {
     font-size: var(--font-Size-subtitle);
@@ -1386,7 +1373,7 @@ p {
   align-content: center;
   /* align-content for center logo client */
   color: var(--color-light-75);
-  height: 70px;
+  height: 80px;
   /* height diganti sesuai ukuran logo atau fix pada 150px */
 }
 /*{client}*/
