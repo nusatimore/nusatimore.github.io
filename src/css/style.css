@@ -214,14 +214,18 @@ p {
   -ms-transition: all 0.9s;
   -o-transition: all 0.9s;
 }
+@media only screen and (max-width: 580px) {
+  /* {home::title} */
+  .ntt-home .content-home .home-title h1 {
+    font-size: 1rem;
+  }
+}
 @media only screen and (max-width: 991px) {
   /* {home::title} */
   .ntt-home .content-home .home-title h1 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
-  .ntt-home .content-home .home-title h2 {
-    font-size: 3rem;
-  }
+
   /* {home::button} */
   .ntt-home .content-home .btn-title {
     padding: 0.6rem 0.2rem 0.65rem 0.15rem;
@@ -1002,7 +1006,7 @@ p {
   justify-items: center;
   height: 400px;
 }
-.ntt_direct-link:after {
+.ntt_direct-link::before {
   animation-delay: 1s;
   -webkit-animation-delay: 1s;
   animation-duration: 1.2s;
@@ -1018,27 +1022,35 @@ p {
   overflow: hidden;
   content: "";
   opacity: 0;
-  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  position: inherit;
   height: inherit;
   width: inherit;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 @keyframes pulse_maps {
   0% {
-    box-shadow: 0 0 0 0 var(--color-dark);
+    box-shadow: 0 0 0 0 var(--color-warning);
     opacity: 1;
   }
   to {
-    box-shadow: 0 0 0 15px var(--color-dark);
+    box-shadow: 0 0 0 15px var(--color-warning);
     opacity: 0;
   }
 }
 @-webkit-keyframes pulse_maps {
   0% {
-    box-shadow: 0 0 0 0 var(--color-dark);
+    box-shadow: 0 0 0 0 var(--color-warning);
     opacity: 1;
   }
   to {
-    box-shadow: 0 0 0 15px var(--color-dark);
+    box-shadow: 0 0 0 15px var(--color-warning);
     opacity: 0;
   }
 }
@@ -1053,11 +1065,10 @@ p {
   z-index: 1;
   top: 20%;
 }
-.maps:hover {
+.ntt_contact-loct:hover .maps {
   width: 250px;
   height: 250px;
   top: 10%;
-  border: 1px solid var(--color-border-hover);
 }
 .maps {
   z-index: 2;
@@ -1075,10 +1086,12 @@ p {
   -ms-transition: 0.5s all ease-in-out;
   -o-transition: 0.5s all ease-in-out;
 }
+
 .maps_point {
   width: 60px;
   margin-top: 110px;
   z-index: 3;
+  position: inherit;
 }
 .ntt_tag {
   color: var(--color-light);
@@ -1357,3 +1370,19 @@ p {
   height: 150px;
   /* height diganti sesuai ukuran logo atau fix pada 150px */
 }
+/*{client}*/
+.ntt_client {
+  margin: 0;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.ntt_client .ntt_client-content .ntt_client_top .ntt_client_title,
+.ntt_client .ntt_client-content .ntt_client_top .ntt_client_subtitle,
+.ntt_client .ntt_client-content .ntt_client_bottom .ntt_swipper-slider {
+  text-align: center;
+}
+.ntt_client .ntt_client-content .ntt_client_top .ntt_client_title h1 {
+  text-transform: uppercase;
+}
+
+/*{client}*/
