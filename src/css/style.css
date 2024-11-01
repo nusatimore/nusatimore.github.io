@@ -526,10 +526,6 @@ p {
   font-size: var(--font-Size-desc);
 }
 @media only screen and (max-width: 578px) {
-  .services_ntt-title,
-  .services_ntt-subtitle {
-    height: 70px;
-  }
   .services_ntt-title h1 {
     font-size: var(--font-Size-subtitle);
   }
@@ -539,7 +535,10 @@ p {
 }
 @media only screen and (max-width: 920px) {
   .services_ntt-title h1 {
-    font-size: var(--font-Size-subtitle);
+    font-size: var(--font-Size-title);
+  }
+  .services_ntt-subtitle {
+    height: 60px;
   }
   .services_ntt-subtitle p {
     font-size: var(--font-Size-desc);
