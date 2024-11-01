@@ -117,18 +117,7 @@ p {
 }
 /* {header} */
 /* {heade::item} */
-.ntt_title {
-  box-shadow: none;
-  background: transparent;
-  transform-style: preserve-3d;
-  padding: 0;
-  height: auto;
-  float: none;
-}
-.home-title button {
-  border: 0;
-  background-color: transparent;
-}
+
 .ntt-header .container {
   height: 700px;
   /* background-image: url(/public/img/home-header-image.jpg);
@@ -1371,10 +1360,13 @@ p {
 .cta-console-content {
   text-align: center;
   align-content: center;
-  /* align-content for center logo client */
-  color: var(--color-light-75);
-  height: 80px;
-  /* height diganti sesuai ukuran logo atau fix pada 150px */
+  border-color: var(--color-light);
+  height: auto;
+}
+.cta-console-content h1 {
+  font-size: 3rem;
+  color: var(--color-dark);
+  text-transform: uppercase;
 }
 /*{client}*/
 .ntt_client {
