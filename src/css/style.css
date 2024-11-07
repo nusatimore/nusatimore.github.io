@@ -981,7 +981,7 @@ p {
   align-content: center;
   justify-content: center;
   justify-items: center;
-  height: 400px;
+  height: 290px;
 }
 .ntt_direct-link::before {
   animation-delay: 1s;
@@ -1044,13 +1044,11 @@ p {
 }
 .ntt_contact-loct:hover .maps {
   width: 250px;
-  height: 250px;
   top: 10%;
 }
 .maps {
   z-index: 2;
   top: 20%;
-  height: 150px;
   width: 150px;
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -1066,7 +1064,7 @@ p {
 
 .maps_point {
   width: 60px;
-  margin-top: 110px;
+  margin-top: 90px;
   z-index: 3;
   position: inherit;
 }
@@ -1091,13 +1089,6 @@ p {
   -moz-transform: rotate(-7deg);
   -ms-transform: rotate(-7deg);
   -o-transform: rotate(-7deg);
-  /* style for 3d box */
-  /* box-shadow: 0 -0.5px 1px var(--color-dark-50) inset,
-    0 1px 1px -0.5px var(--color-dark-50), 0 3px 3px -1.5px var(--color-dark-50),
-    0 6px 6px -3px var(--color-dark-50), 0 12px 12px -6px var(--color-dark-50),
-    0 24px 24px -12px var(--color-dark-50),
-    0 32px 32px -16px var(--color-dark-25),
-    0 44px 44px -16px var(--color-dark-25); */
 }
 @media only screen and (max-width: 1024px) {
   .ntt_tag {
@@ -1140,19 +1131,18 @@ p {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.ntt-contact-subtitle .marg {
-  padding: 1rem;
+.marg {
   color: var(--color-light);
 }
-.ntt-contact-subtitle .ntt_footer-qlinks {
+.ntt_footer-qlinks {
   padding: 0.5rem;
-  margin-top: 1rem;
+
   text-align: center;
   color: var(--color-light);
   font-size: var(--font-Size-desc);
   font-weight: var(--font-Size-desc);
 }
-.ntt-contact-subtitle .ntt_footer-qlinks .fa {
+.ntt_footer-qlinks .fa {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -1169,7 +1159,6 @@ p {
   color: #494646d3;
   line-height: 1.6;
   position: fixed;
-  font-family: sans-serif;
   overflow: hidden;
 }
 .lines {
@@ -1209,13 +1198,13 @@ p {
     &:nth-child(1) {
       margin-left: -25%;
       &::after {
-        animation-delay: 2s;
+        animation-delay: 1s;
       }
     }
     &:nth-child(3) {
       margin-left: 25%;
       &::after {
-        animation-delay: 2.5s;
+        animation-delay: 1s;
       }
     }
   }
