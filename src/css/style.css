@@ -278,13 +278,6 @@ p {
   -moz-border-radius: 1rem;
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
-  /* style for 3d box */
-  /* box-shadow: 0 -0.5px 1px var(--color-dark-50) inset,
-    0 1px 1px -0.5px var(--color-dark-50), 0 3px 3px -1.5px var(--color-dark-50),
-    0 6px 6px -3px var(--color-dark-50), 0 12px 12px -6px var(--color-dark-50),
-    0 24px 24px -12px var(--color-dark-50),
-    0 32px 32px -16px var(--color-dark-25),
-    0 44px 44px -16px var(--color-dark-25); */
 }
 .ntt_nav-brand {
   align-items: center;
@@ -1596,6 +1589,12 @@ p {
   font-size: var(--font-Size-subtitle);
 }
 
+.ntt_client-item-text-rb {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
 .ntt_client-item-text-rb h1 {
   color: var(--color-dark);
   font-size: var(--font-Size-subtitle);
@@ -1613,9 +1612,14 @@ p {
   font-size: var(--font-Size-subtitle);
   font-weight: var(--font-weight-subtitle);
 }
-
 .ntt_client-content-tr-img {
   margin: auto;
   align-items: center;
   align-content: center;
+}
+.ntt_client-content-tr-title h3 {
+  color: var(--color-warning);
+  padding-left: 1rem;
+  font-weight: var(--font-weight-title);
+  font-size: var(--font-Size-title);
 }
