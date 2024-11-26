@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--{created by IT Dept. Nusa Timore Telematika : 2024}-->
 <html lang="en">
   <head>
     <!--{meta}-->
@@ -22,7 +23,6 @@
     />
     <!--{fonts}-->
     <!--{styles}-->
-
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -42,84 +42,6 @@
     <!--{styles}-->
   </head>
   <body>
-    <style>
-      /*{nav Link}*/
-      .ntt-nav-menu {
-        text-align: center;
-        margin-left: 3.5rem;
-      }
-      .ntt-nav-menulist {
-        display: flex;
-        list-style: none;
-      }
-      .ntt-navlink {
-        text-decoration: none;
-        font-size: var(--font-Size-nav);
-        font-weight: var(--font-weight-title);
-        padding: 0rem 1rem;
-        text-transform: uppercase;
-        color: var(--color-dark) !important;
-        height: 10px;
-        align-items: center;
-        text-decoration: none;
-        display: flex;
-      }
-      .mask-ntt {
-        position: relative;
-        padding: 0;
-        height: 10px;
-        overflow: hidden;
-      }
-      .ntt_navlink-container {
-        transition: transform 0.4s ease;
-        -webkit-transition: transform 0.4s ease;
-        -moz-transition: transform 0.4s ease;
-        -ms-transition: transform 0.4s ease;
-        -o-transition: transform 0.4s ease;
-      }
-      .link_title {
-        display: block;
-        font-size: 10px;
-        line-height: 10px;
-        transition: transform 0.4s ease;
-      }
-      .ntt_navlink-title1 {
-        transform-origin: right center;
-      }
-      .ntt_navlink-title2 {
-        transform-origin: left center;
-        transform: rotate(20deg);
-      }
-      .ntt-navlink:hover .ntt_navlink-container {
-        transform: translateY(-10px);
-        -webkit-transform: translateY(-10px);
-        -moz-transform: translateY(-10px);
-        -ms-transform: translateY(-10px);
-        -o-transform: translateY(-10px);
-      }
-      .ntt-navlink:hover .ntt_navlink-title1 {
-        transform: rotate(10deg);
-        -webkit-transform: rotate(10deg);
-        -moz-transform: rotate(10deg);
-        -ms-transform: rotate(10deg);
-        -o-transform: rotate(10deg);
-      }
-      .ntt-navlink:hover .ntt_navlink-title2 {
-        transform: rotate(0);
-        -webkit-transform: rotate(0);
-        -moz-transform: rotate(0);
-        -ms-transform: rotate(0);
-        -o-transform: rotate(0);
-      }
-      /*{nav Link}*/
-    </style>
-    <div class="table">
-      <div class="lines">
-        <div class="linex"></div>
-        <div class="linex"></div>
-        <div class="linex"></div>
-      </div>
-    </div>
     <!--{header}-->
     <header>
       <!--{home}-->
@@ -127,18 +49,11 @@
         <div id="home" class="ntt-home">
           <div class="container ntt-padding">
             <div class="row content-home">
-              <div class="cont-content">
-                <div class="ntt_cta-1">
-                  <div class="ntt_cta-2">
-                    <div class="cta-console">
-                      <div class="cta-console-wrapper">
-                        <div class="cta-console-content">
-                          <h1 class="cta-title">We Provide Best Services</h1>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div class="home-title">
+                <h1>
+                  WeProvide <br />
+                  BestServices
+                </h1>
               </div>
               <div class="home-subtitle">
                 <p>
@@ -148,6 +63,7 @@
                   infrastructure construction in Indonesia.
                 </p>
               </div>
+
               <div class="home-btn">
                 <a
                   class="btn-title"
@@ -165,28 +81,28 @@
       <!--{home}-->
     </header>
     <!--{header}-->
-
     <!--{nav}-->
-    <nav class="ntt-nav">
-      <a href="#home" class="ntt_nav-brand">
-        <div class="rotating-item" id="gear">
-          <svg
-            height="800px"
-            width="800px"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            viewBox="0 0 512 512"
-            xml:space="preserve"
-          >
-            <style type="text/css">
-              .st0 {
-                fill: currentColor;
-              }
-            </style>
-            <g>
-              <path
-                class="st0"
-                d="M500.781,224.245L447,211.561c-4.93-21.263-13.289-41.202-24.509-59.193l29.053-46.992
+    <div class="ntt-padding">
+      <nav class="ntt-nav">
+        <a href="#home" class="ntt_nav-brand" id="node-0">
+          <div class="rotating-item" id="gear">
+            <svg
+              height="800px"
+              width="800px"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 512 512"
+              xml:space="preserve"
+            >
+              <style type="text/css">
+                .st0 {
+                  fill: currentColor;
+                }
+              </style>
+              <g>
+                <path
+                  class="st0"
+                  d="M500.781,224.245L447,211.561c-4.93-21.263-13.289-41.202-24.509-59.193l29.053-46.992
 		c3.552-5.763,2.685-13.184-2.097-17.965l-24.86-24.86c-4.772-4.772-12.202-5.64-17.956-2.088L359.64,89.517
 		C341.648,78.298,321.719,69.929,300.456,65l-12.693-53.78C286.211,4.649,280.334,0,273.588,0h-35.166
 		c-6.755,0-12.623,4.649-14.176,11.219L211.553,65c-21.263,4.93-41.194,13.29-59.175,24.509l-47.001-29.053
@@ -200,169 +116,242 @@
 		c11.22-17.983,19.579-37.921,24.509-59.176l53.781-12.693c6.588-1.561,11.219-7.429,11.219-14.184V238.42
 		C512,231.666,507.36,225.798,500.781,224.245z M256,390.614c-74.334,0-134.606-60.272-134.606-134.614
 		c0-74.342,60.272-134.615,134.606-134.615c74.359,0,134.623,60.272,134.623,134.615C390.623,330.342,330.359,390.614,256,390.614z"
-              />
-              <path
-                class="st0"
-                d="M256,170.684c-47.114,0-85.316,38.194-85.316,85.316s38.202,85.315,85.316,85.315
+                />
+                <path
+                  class="st0"
+                  d="M256,170.684c-47.114,0-85.316,38.194-85.316,85.316s38.202,85.315,85.316,85.315
 		c47.123,0,85.316-38.192,85.316-85.315S303.123,170.684,256,170.684z M256,297.859c-23.114,0-41.86-18.746-41.86-41.859
 		c0-23.114,18.746-41.86,41.86-41.86c23.114,0,41.859,18.746,41.859,41.86C297.859,279.114,279.114,297.859,256,297.859z"
-              />
-            </g>
-          </svg>
+                />
+              </g>
+            </svg>
+          </div>
+          <img
+            src="./public/favicon/NTT-PL-1024x488 rotate.png"
+            alt="ntt-logo"
+          />
+          <img
+            class="svg-text"
+            src="./public/favicon/nt-text.png"
+            alt="ntt-logo"
+          />
+        </a>
+
+        <div class="ntt-nav-menu">
+          <ul class="ntt-nav-menulist">
+            <li class="ntt_nav-li" style="display: flex">
+              <a href="#services" class="ntt-navlink" id="node-1"> Work </a>
+              <a href="#client" class="ntt-navlink" id="node-3"> Client </a>
+              <a href="#team" class="ntt-navlink" id="node-2"> Team </a>
+              <a class="ntt-navlink pointer" id="drop-docs"> Docs </a>
+            </li>
+          </ul>
         </div>
-        <img src="./public/favicon/NTT-PL-1024x488 rotate.png" alt="ntt-logo" />
-        <img
-          class="svg-text"
-          src="./public/favicon/nt-text.png"
-          alt="ntt-logo"
-        />
-      </a>
-      <style></style>
-      <div class="ntt-nav-menu">
-        <ul class="ntt-nav-menulist">
-          <li class="ntt_nav-li" style="display: flex">
-            <a href="#services" class="ntt-navlink">
-              <span class="mask-ntt">
-                <div class="ntt_navlink-container">
-                  <span class="ntt_navlink-title1 link_title">Work</span>
-                  <span class="ntt_navlink-title2 link_title">Work</span>
-                </div>
-              </span>
-            </a>
-
-            <a href="#team" class="ntt-navlink">
-              <span class="mask-ntt">
-                <div class="ntt_navlink-container">
-                  <span class="ntt_navlink-title1 link_title">Team</span>
-                  <span class="ntt_navlink-title2 link_title">Team</span>
-                </div>
-              </span>
-            </a>
-
-            <a href="#client" class="ntt-navlink">
-              <span class="mask-ntt">
-                <div class="ntt_navlink-container">
-                  <span class="ntt_navlink-title1 link_title">Client</span>
-                  <span class="ntt_navlink-title2 link_title">Client</span>
-                </div>
-              </span>
-            </a>
-            <a
-              href="https://nusatimoretelematika.gitbook.io/docs/"
-              target="_blank"
-              class="ntt-navlink"
-            >
-              <span class="mask-ntt">
-                <div class="ntt_navlink-container">
-                  <span class="ntt_navlink-title1 link_title">Docs</span>
-                  <span class="ntt_navlink-title2 link_title">Docs</span>
-                </div>
-              </span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="ntt-nav-add">
-        <a href="https://www.linkedin.com/in/nusa-timore-telematika-b32505333/">
-          <svg
-            fill="#380a53"
-            height="15px"
-            width="15px"
-            version="1.1"
-            id="Layer_1"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            viewBox="0 0 310 310"
-            xml:space="preserve"
+        <div class="ntt-nav-add" id="node-4">
+          <a
+            href="https://www.linkedin.com/in/nusa-timore-telematika-b32505333/"
           >
-            <g id="XMLID_801_">
-              <path
-                id="XMLID_802_"
-                d="M72.16,99.73H9.927c-2.762,0-5,2.239-5,5v199.928c0,2.762,2.238,5,5,5H72.16c2.762,0,5-2.238,5-5V104.73
+            <svg
+              fill="#380a53"
+              height="15px"
+              width="15px"
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 310 310"
+              xml:space="preserve"
+            >
+              <g id="XMLID_801_">
+                <path
+                  id="XMLID_802_"
+                  d="M72.16,99.73H9.927c-2.762,0-5,2.239-5,5v199.928c0,2.762,2.238,5,5,5H72.16c2.762,0,5-2.238,5-5V104.73
 		C77.16,101.969,74.922,99.73,72.16,99.73z"
-              />
-              <path
-                id="XMLID_803_"
-                d="M41.066,0.341C18.422,0.341,0,18.743,0,41.362C0,63.991,18.422,82.4,41.066,82.4
+                />
+                <path
+                  id="XMLID_803_"
+                  d="M41.066,0.341C18.422,0.341,0,18.743,0,41.362C0,63.991,18.422,82.4,41.066,82.4
 		c22.626,0,41.033-18.41,41.033-41.038C82.1,18.743,63.692,0.341,41.066,0.341z"
-              />
-              <path
-                id="XMLID_804_"
-                d="M230.454,94.761c-24.995,0-43.472,10.745-54.679,22.954V104.73c0-2.761-2.238-5-5-5h-59.599
+                />
+                <path
+                  id="XMLID_804_"
+                  d="M230.454,94.761c-24.995,0-43.472,10.745-54.679,22.954V104.73c0-2.761-2.238-5-5-5h-59.599
 		c-2.762,0-5,2.239-5,5v199.928c0,2.762,2.238,5,5,5h62.097c2.762,0,5-2.238,5-5v-98.918c0-33.333,9.054-46.319,32.29-46.319
 		c25.306,0,27.317,20.818,27.317,48.034v97.204c0,2.762,2.238,5,5,5H305c2.762,0,5-2.238,5-5V194.995
 		C310,145.43,300.549,94.761,230.454,94.761z"
-              />
-            </g>
-          </svg>
-        </a>
-        <a href="#contact" class="ntt-navadd" style="margin-left: 1rem"
-          >Get In touch
-          <span
-            ><i
-              class="fa fa-arrow-right"
-              style="
-                margin-left: 5px;
-                transform: rotate(-45deg);
-                -webkit-transform: rotate(-45deg);
-                -moz-transform: rotate(-45deg);
-                -ms-transform: rotate(-45deg);
-                -o-transform: rotate(-45deg);
-              "
-            ></i></span
-        ></a>
-        <!--{hamburger}-->
-        <div class="three">
-          <div class="hamburger" id="hamburger-1">
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
+                />
+              </g>
+            </svg>
+          </a>
+          <a
+            href="#contact"
+            class="button_primary"
+            style="margin-left: 1rem"
+            id="node-5"
+            >Get In touch <span><i class="fa fa-arrow-right"></i></span
+          ></a>
+          <!--{hamburger}-->
+          <div class="three">
+            <div class="hamburger" id="hamburger-1">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
           </div>
+          <!--{hamburger}-->
         </div>
-        <!--{hamburger}-->
-      </div>
-    </nav>
+      </nav>
+    </div>
+    <!--{drop::down}-->
+    <div class="ntt-nav-drop" id="nav-drop">
+      <ul class="ntt-nav-menulist">
+        <li class="ntt_nav-li">
+          <a
+            href="https://nusatimoretelematika.gitbook.io/docs/"
+            target="_blank"
+            class="ntt-navlink"
+            ><div class="drop-box">
+              <i class="fa fa-city"></i>
+              <div class="drop-box-text">
+                <p>Overview</p>
+                <div class="desc-text">Story of Nusa Timore</div>
+              </div>
+            </div>
+          </a>
 
-    <!--{mobile:menu-->
+          <a
+            href="https://app.gitbook.com/o/X5LJxtbDwG5VJg8DDxh2/s/undsWIv2v0HbmSRJZB8y/~/changes/9/intro/legal"
+            target="_blank"
+            class="ntt-navlink"
+          >
+            <div class="drop-box">
+              <i class="fa fa-file-contract"></i>
+              <div class="drop-box-text">
+                <p>Legal</p>
+                <div class="desc-text">Legality of Nusa Timore</div>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://app.gitbook.com/o/X5LJxtbDwG5VJg8DDxh2/s/undsWIv2v0HbmSRJZB8y/~/changes/9/price-list/about-price"
+            target="_blank"
+            class="ntt-navlink"
+          >
+            <div class="drop-box">
+              <i class="fa fa-handshake"></i>
+              <div class="drop-box-text">
+                <p>Price</p>
+                <div class="desc-text">See Our Price List</div>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://nusatimoretelematika.gitbook.io/docs/experience/telco-infra"
+            target="_blank"
+            class="ntt-navlink"
+          >
+            <div class="drop-box">
+              <i class="fa fa-layer-group"></i>
+              <div class="drop-box-text">
+                <p>Experience</p>
+                <div class="desc-text">See Our Experiences</div>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!--{drop::down}-->
+    <!--{mobile::menu-->
     <div id="mobMenu" class="mobile-menu">
       <ul class="ntt-mobile-menulist">
         <li>
           <a href="#services" class="ntt-mobilelink">Work</a>
         </li>
+
         <li><a href="#client" class="ntt-mobilelink">Client</a></li>
+
         <li><a href="#team" class="ntt-mobilelink">Team</a></li>
+
         <li>
-          <a
-            href="https://nusatimoretelematika.gitbook.io/docs/experience/telco-infra"
-            target="_blank"
-            class="ntt-mobilelink"
-            >Exp</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://nusatimoretelematika.gitbook.io/docs/"
-            target="_blank"
-            class="ntt-mobilelink"
-            >Docs</a
-          >
+          <a class="ntt-mobilelink pointer" id="nav-docm-btn">Docs</a>
+          <!--{docs::menu}-->
+          <div class="ntt-nav-docm open" id="nav-docm">
+            <ul class="ntt-nav-docmenu">
+              <li class="ntt-nav-docmenu-link">
+                <a
+                  href="https://nusatimoretelematika.gitbook.io/docs/"
+                  target="_blank"
+                >
+                  <div class="drop-box">
+                    <div class="drop-box-text">
+                      <p>Overview</p>
+                      <div class="desc-text">story about us</div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="ntt-nav-docmenu-link">
+                <a
+                  href="https://app.gitbook.com/o/X5LJxtbDwG5VJg8DDxh2/s/undsWIv2v0HbmSRJZB8y/~/changes/9/intro/legal"
+                  target="_blank"
+                  ><div class="drop-box">
+                    <div class="drop-box-text">
+                      <p>Legal</p>
+                      <div class="desc-text">Legality of Nusa Timore</div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <ul class="ntt-nav-docmenu">
+              <li class="ntt-nav-docmenu-link">
+                <a
+                  href="https://app.gitbook.com/o/X5LJxtbDwG5VJg8DDxh2/s/undsWIv2v0HbmSRJZB8y/~/changes/9/price-list/about-price"
+                  target="_blank"
+                >
+                  <div class="drop-box">
+                    <div class="drop-box-text">
+                      <p>Price</p>
+                      <div class="desc-text">See Our Price List</div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="ntt-nav-docmenu-link">
+                <a
+                  href="https://nusatimoretelematika.gitbook.io/docs/experience/telco-infra"
+                  target="_blank"
+                >
+                  <div class="drop-box">
+                    <div class="drop-box-text">
+                      <p>Experience</p>
+                      <div class="desc-text">See Our Experiences</div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!--{docs::menu}-->
         </li>
       </ul>
     </div>
     <!--{nav}-->
-
-    <!--{ntt=page}-->
+    <!--{main}-->
     <main class="ntt-page overflow-hidden">
       <div class="ntt-padding">
         <!--{services}-->
         <section id="services">
-          <div class="services_ntt_list top-section">
+          <div class="services_ntt_list">
             <!-- grid -->
             <div class="services_ntt-box">
               <div class="services_ntt-wrapper">
                 <div class="services_ntt-title">
                   <h1>
-                    <span>nusa timore</span> <br />
+                    <span>Nusa Timore</span> <br />
                     Work
                     <span>
                       <svg
@@ -409,7 +398,7 @@
                 <!--{services List}-->
                 <div class="services_ntt-subtitle">
                   <p>
-                    Established since March 2024, Nusa Timor is committed to
+                    Established since March 2024, Nusa Timore is committed to
                     providing professional services and trusted in the world of
                     telecommunications infrastructure construction in Indonesia.
                   </p>
@@ -440,15 +429,16 @@
                       <p>End to End Implementation & Monitoring</p>
                       <p>As-Built Documentation</p>
                     </div>
-                    <div>
+                    <div class="ntt_services-item-btntxt">
                       <a
-                        class="btn-title"
+                        class="button_primary"
                         target="_blank"
                         href="https://nusatimoretelematika.gitbook.io/docs/price-list/telco-infra"
                       >
-                        Price
+                        Read Our Docs
                         <i class="fa fa-arrow-right"></i>
                       </a>
+                      <p class="desc-text">&amp; Get Pricing Detail</p>
                     </div>
                   </div>
                 </div>
@@ -470,15 +460,16 @@
                       <p>Remote Support</p>
                       <p>Hardware Instalation & Maintenance</p>
                     </div>
-                    <div class="btn-btn">
+                    <div class="ntt_services-item-btntxt">
                       <a
-                        class="btn-title"
+                        class="button_primary"
                         target="_blank"
                         href="https://nusatimoretelematika.gitbook.io/docs/price-list/it-services"
                       >
-                        Price
+                        Read Our Docs
                         <i class="fa fa-arrow-right"></i>
                       </a>
+                      <p class="desc-text">&amp; Get Pricing Detail</p>
                     </div>
                   </div>
                 </div>
@@ -487,188 +478,9 @@
           </div>
         </section>
         <!--{services}-->
-
-        <!--{team}-->
-        <section id="team">
-          <div class="team_ntt_list top-section">
-            <!--{grid}-->
-            <div class="team_ntt-box">
-              <div class="team_ntt-wrapper">
-                <div class="team_ntt-title">
-                  <h1>
-                    <span>meet nusa timore</span> <br />
-                    team
-                    <span>
-                      <svg
-                        style="position: relative; top: -10; left: -10"
-                        width="30"
-                        height="30"
-                        viewBox="0 0 200 200"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <g clip-path="url(#clip0_104_26)">
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M107.143 0H92.8571V82.7556L34.3401 24.2385L24.2386 34.3401L82.7556 92.8571H0V107.143H82.7555L24.2386 165.66L34.3401 175.761L92.8571 117.244V200H107.143V117.244L165.66 175.761L175.761 165.66L117.244 107.143H200V92.8571H117.244L175.761 34.34L165.66 24.2385L107.143 82.7555V0Z"
-                            fill="url(#paint0_linear_104_26)"
-                          />
-                        </g>
-                        <defs>
-                          <linearGradient
-                            id="paint0_linear_104_26"
-                            x1="20.5"
-                            y1="16"
-                            x2="100"
-                            y2="200"
-                            gradientUnits="userSpaceOnUse"
-                          >
-                            <stop stop-color="#fc0" />
-                            <stop offset="1" stop-color="#fc0" />
-                          </linearGradient>
-                          <clipPath id="clip0_104_26">
-                            <rect width="200" height="200" fill="white" />
-                          </clipPath>
-                        </defs>
-                      </svg>
-                    </span>
-                  </h1>
-                </div>
-              </div>
-            </div>
-            <!--{grid}-->
-            <div class="team_ntt-box">
-              <div class="team_ntt-wrapper">
-                <!--{team::content}-->
-                <div class="team_ntt-subtitle">
-                  <p>
-                    experience & profesional team will provide best services
-                  </p>
-                </div>
-                <!--{team::content}-->
-              </div>
-            </div>
-          </div>
-          <!--{grid}-->
-          <!--{teams::swipper}-->
-          <div class="ntt_swiper">
-            <div class="swiper-container">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="product-grid">
-                    <div class="product-image">
-                      <a href="javascript:void(0)">
-                        <h4>MITHE</h4>
-                        <img
-                          class="pic-1"
-                          width="240px"
-                          src="./public/swipper/team-mithe.png"
-                        />
-                        <p>CEO</p>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="product-grid topdown">
-                    <div class="product-image">
-                      <a href="javascript:void(0)">
-                        <h4>ABANK</h4>
-                        <img
-                          class="pic-2"
-                          width="240px"
-                          src="./public/swipper/team-abank.png"
-                        />
-                        <p>CTO</p>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="product-grid">
-                    <div class="product-image">
-                      <a href="javascript:void(0)">
-                        <h4>INDAH</h4>
-                        <img
-                          class="pic-1"
-                          width="240px"
-                          src="./public/swipper/team-inda.png"
-                        />
-                        <p>CFO</p>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="product-grid topdown">
-                    <div class="product-image">
-                      <a href="javascript:void(0)">
-                        <h4>KA-AN</h4>
-                        <img
-                          class="pic-2"
-                          width="240px"
-                          src="./public/swipper/team-kaan.png"
-                        />
-                        <p>Project Manager</p>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="product-grid">
-                    <div class="product-image">
-                      <a href="javascript:void(0)">
-                        <h4>JO</h4>
-                        <img
-                          class="pic-1"
-                          width="240px"
-                          src="./public/swipper/team-jo.png"
-                        />
-                        <p>HSE</p>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="product-grid topdown">
-                    <div class="product-image">
-                      <a href="javascript:void(0)">
-                        <h4>HERNAZS</h4>
-                        <img
-                          class="pic-1"
-                          width="240px"
-                          src="./public/swipper/team-hernazs.png"
-                        />
-                        <p>Engineering</p>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="product-grid">
-                    <div class="product-image">
-                      <a href="javascript:void(0)">
-                        <h4>CHA.</h4>
-                        <img
-                          class="pic-2"
-                          width="240px"
-                          src="./public/swipper/team-cha.png"
-                        />
-                        <p>Permit</p>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--{teams::swipper}-->
-        </section>
-        <!--{team}-->
         <!--{partner&client}-->
         <!-- grid -->
-        <section id="client" class="ntt_client-item">
+        <section id="client">
           <div class="ntt_client-item_list">
             <div class="ntt_client-item-box">
               <div class="ntt_client-item-wrapper">
@@ -684,22 +496,22 @@
                     >
                       <div class="ntt_client-item-content-alt fade-bg">
                         <div class="ntt_client-item-text">
-                          <h1>grow your company</h1>
-                          <p>
+                          <h2>Grow Your Company</h2>
+                          <h5>
                             Expand Your Bussiness with Nusa Timore as your
                             helper
-                          </p>
-                          <h3>
+                          </h5>
+                          <p>
                             with profesional and experienced team we provide
                             best support services for better works
-                          </h3>
+                          </p>
                           <div class="btn-r-desk">
                             <a
                               href="https://nusatimoretelematika.gitbook.io/docs/experience/telco-infra"
                               target="_blank"
                               >Learn More <i class="fa fa-arrow-right"></i
                             ></a>
-                            <span>about our experience</span>
+                            <span class="desc-text">about our experience</span>
                           </div>
                         </div>
                       </div>
@@ -712,7 +524,7 @@
                       <div class="ntt_client-item-content-alt-logo">
                         <div class="ntt_client-item-logo-title">
                           <h1>
-                            nusa timore <br />
+                            Nusa Timore <br />
                             Client
                             <span>
                               <svg
@@ -1063,14 +875,13 @@
                   <div class="ntt_client-item-box-alt">
                     <div class="ntt_client-item-content-alt">
                       <div class="ntt_client-content-tr">
-                        <h3>nusa timore partner</h3>
+                        <h2>Nusa Timore Partner</h2>
                         <p>
                           Lorem ipsum, dolor sit amet consectetur adipisicing
                           elit. Ea doloremque dicta cum sapiente fuga,
                           voluptatum adipisci, ut aut tenetur quaerat hic, animi
                           recusandae soluta fugiat distinctio a. Dolor aliquam
-                          rerum odio quasi obcaecati, at accusantium doloribus
-                          inventore nesciunt, perspiciatis sequi.
+                          rerum odio quasi obcaecati.
                         </p>
                       </div>
                     </div>
@@ -1090,7 +901,7 @@
                       <div class="ntt_client-content-tr-img">
                         <img
                           src="./public/favicon/nsn-color.png"
-                          height="260"
+                          height="160"
                           alt=""
                         />
                       </div>
@@ -1106,18 +917,211 @@
           </div>
         </section>
         <!-- grid -->
-
         <!--{partner&client}-->
 
+        <!--{team}-->
+        <section id="team">
+          <div class="team_ntt_list">
+            <!--{grid}-->
+            <div class="team_ntt-box">
+              <div class="team_ntt-wrapper">
+                <div class="team_ntt-title">
+                  <h1>
+                    <span>Meet Nusa Timore</span> <br />
+                    Team
+                    <span>
+                      <svg
+                        style="position: relative; top: -10; left: -10"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 200 200"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_104_26)">
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M107.143 0H92.8571V82.7556L34.3401 24.2385L24.2386 34.3401L82.7556 92.8571H0V107.143H82.7555L24.2386 165.66L34.3401 175.761L92.8571 117.244V200H107.143V117.244L165.66 175.761L175.761 165.66L117.244 107.143H200V92.8571H117.244L175.761 34.34L165.66 24.2385L107.143 82.7555V0Z"
+                            fill="url(#paint0_linear_104_26)"
+                          />
+                        </g>
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_104_26"
+                            x1="20.5"
+                            y1="16"
+                            x2="100"
+                            y2="200"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="#fc0" />
+                            <stop offset="1" stop-color="#fc0" />
+                          </linearGradient>
+                          <clipPath id="clip0_104_26">
+                            <rect width="200" height="200" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </span>
+                  </h1>
+                </div>
+              </div>
+            </div>
+            <!--{grid}-->
+            <div class="team_ntt-box">
+              <div class="team_ntt-wrapper">
+                <!--{team::content}-->
+                <div class="team_ntt-subtitle">
+                  <p>
+                    experience & profesional team will provide best services
+                  </p>
+                </div>
+                <!--{team::content}-->
+              </div>
+            </div>
+          </div>
+          <!--{grid}-->
+          <!--{teams::swipper}-->
+          <div class="ntt_swiper">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="product-grid">
+                    <div class="product-image">
+                      <a href="javascript:void(0)">
+                        <h3>MITHE</h3>
+                        <img
+                          class="pic-1"
+                          width="240px"
+                          src="./public/swipper/team-mithe.png"
+                        />
+                        <p>CEO</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-grid topdown">
+                    <div class="product-image">
+                      <a href="javascript:void(0)">
+                        <h3>ABANK</h3>
+                        <img
+                          class="pic-2"
+                          width="240px"
+                          src="./public/swipper/team-abank.png"
+                        />
+                        <p>CTO</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-grid">
+                    <div class="product-image">
+                      <a href="javascript:void(0)">
+                        <h3>INDAH</h3>
+                        <img
+                          class="pic-1"
+                          width="240px"
+                          src="./public/swipper/team-inda.png"
+                        />
+                        <p>CFO</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-grid topdown">
+                    <div class="product-image">
+                      <a href="javascript:void(0)">
+                        <h3>KA-AN</h3>
+                        <img
+                          class="pic-2"
+                          width="240px"
+                          src="./public/swipper/team-kaan.png"
+                        />
+                        <p>Project Manager</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-grid">
+                    <div class="product-image">
+                      <a href="javascript:void(0)">
+                        <h3>JO</h3>
+                        <img
+                          class="pic-1"
+                          width="240px"
+                          src="./public/swipper/team-jo.png"
+                        />
+                        <p>HSE</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-grid topdown">
+                    <div class="product-image">
+                      <a href="javascript:void(0)">
+                        <h3>HERNAZS</h3>
+                        <img
+                          class="pic-1"
+                          width="240px"
+                          src="./public/swipper/team-hernazs.png"
+                        />
+                        <p>Engineering</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-grid">
+                    <div class="product-image">
+                      <a href="javascript:void(0)">
+                        <h3>UMBU</h3>
+                        <img
+                          class="pic-2"
+                          width="240px"
+                          src="./public/swipper/team-cha.png"
+                        />
+                        <p>Field SPV</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-grid">
+                    <div class="product-image">
+                      <a href="javascript:void(0)">
+                        <h3>CHA.</h3>
+                        <img
+                          class="pic-2"
+                          width="240px"
+                          src="./public/swipper/team-cha.png"
+                        />
+                        <p>Permit</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--{teams::swipper}-->
+        </section>
+        <!--{team}-->
+
         <!--{contact}-->
-        <section id="contact" class="top-section ntt_contact">
+        <section id="contact">
           <div class="ntt_contact_list">
             <div class="ntt_contact-box">
               <div class="ntt_contact-wrapper">
                 <!--{contact::item}-->
                 <div class="ntt-contact-title">
                   <h1>
-                    get in touch
+                    Get In Touch
                     <span>
                       <svg
                         style="position: relative; top: -10; left: -10"
@@ -1182,13 +1186,6 @@
 
                     <!--{ntt::maps::button}-->
                     <img class="maps" src="./public/img/map.webp" />
-                    <!--{ntt::maps::point}-->
-                    <img
-                      class="maps_point"
-                      src="./public/img/location.png"
-                      alt=""
-                    />
-                    <!--{ntt::maps::point}-->
                     <!--{ntt::maps::tag}-->
                     <div class="ntt_tag">
                       locate &amp; visit<br />nusa timore
@@ -1197,28 +1194,30 @@
                   </a>
                 </div>
                 <!--{contact::item}-->
-                <div class="marg">Quick Links</div>
+                <div class="marg">
+                  <h4>Quick Links</h4>
+                </div>
 
-                <a class="ntt_footer-qlinks" href="#services"
+                <a class="ntt_contact-qlinks" href="#services"
                   >Work <i class="fa fa-arrow-right"></i
                 ></a>
 
                 <!--{links}-->
 
                 <a
-                  class="ntt_footer-qlinks"
+                  class="ntt_contact-qlinks"
                   href="https://app.gitbook.com/o/X5LJxtbDwG5VJg8DDxh2/s/undsWIv2v0HbmSRJZB8y/~/changes/9/intro/legal"
                   >Legal <i class="fa fa-arrow-right"></i
                 ></a>
 
                 <a
-                  class="ntt_footer-qlinks"
+                  class="ntt_contact-qlinks"
                   href="https://app.gitbook.com/o/X5LJxtbDwG5VJg8DDxh2/s/undsWIv2v0HbmSRJZB8y/~/changes/9/price-list/about-price"
                   >Price <i class="fa fa-arrow-right"></i
                 ></a>
 
                 <a
-                  class="ntt_footer-qlinks"
+                  class="ntt_contact-qlinks"
                   href="https://app.gitbook.com/o/X5LJxtbDwG5VJg8DDxh2/s/undsWIv2v0HbmSRJZB8y/~/changes/9/resources/media-file"
                   >Media <i class="fa fa-arrow-right"></i
                 ></a>
@@ -1229,12 +1228,12 @@
         <!--{contact}-->
       </div>
     </main>
-    <!--{ntt=page}-->
+    <!--{main}-->
     <!--{footer}-->
-    <footer id="footer" class="ntt-footer">
-      <div class="ntt-footer-bg">
+    <footer id="footer">
+      <div class="ntt-footer">
         <div class="footer-copyright">
-          <p>© 2024 Nusa Timore telematika</p>
+          <p>2024 © Nusa Timore Telematika</p>
         </div>
       </div>
     </footer>
@@ -1249,24 +1248,5 @@
     <script src="./src/dist/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./src/js/main.js"></script>
-    <script>
-      const item = document.getElementById("gear");
-      window.addEventListener("scroll", () => {
-        const scrollY = window.scrollY;
-        const rotation = scrollY * 0.2;
-        item.style.transform = `rotate(${rotation}deg)`;
-      });
-    </script>
-    <!--{script}-->
-    <script>
-      // PAGE HEADER FADE
-      const divs = $("header");
-      $(window).on("scroll", function () {
-        const st = $(this).scrollTop();
-        divs.css({ opacity: 1 - st / 400 });
-        divs.css({ "transition-delay": "0s" });
-        divs.css({ transition: "0.01s ease-in-out" });
-      });
-    </script>
   </body>
 </html>
