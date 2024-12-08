@@ -39,296 +39,12 @@
     <link rel="stylesheet" href="./src/dist/animation/animate.min.css" />
     <link rel="stylesheet" href="./src/dist/fancybox/fancybox.min.css" />
     <link rel="stylesheet" href="./src/css/style.css" />
+
     <!--{styles}-->
-    <style>
-      /* {nav} */
-      .ntt-nav:hover {
-        border: 1px solid var(--color-border-hover);
-      }
-      .ntt-nav {
-        display: flex;
-        position: fixed;
-        top: 1rem;
-        left: 1rem;
-        right: 1rem;
-        padding: 0.5rem;
-        z-index: 1010;
-        width: auto;
-        align-items: center;
-        justify-content: space-between;
-        background-color: var(--color-light);
-        border: 1px solid var(--color-border);
-        border-radius: 1rem;
-        -webkit-border-radius: 1rem;
-        -moz-border-radius: 1rem;
-        -ms-border-radius: 1rem;
-        -o-border-radius: 1rem;
-      }
-      .ntt_nav-brand {
-        align-items: center;
-        width: 40px;
-        height: 40px;
-      }
-      .ntt_nav-brand .rotating-item,
-      .ntt_nav-brand .rotating-item svg {
-        width: 40px;
-        color: var(--color-ocean);
-        height: 40px;
-        transition: transform 0.2s ease;
-        -webkit-transition: transform 0.2s ease;
-        -moz-transition: transform 0.2s ease;
-        -ms-transition: transform 0.2s ease;
-        -o-transition: transform 0.2s ease;
-      }
-      .ntt_nav-li {
-        display: flex;
-      }
-      .ntt_nav-brand .svg-text {
-        width: auto;
-        top: -84px;
-        color: var(--color-ocean);
-        left: 40px;
-        position: relative;
-        height: 35px;
-      }
-      .ntt_nav-brand img {
-        width: auto;
-        top: -40px;
-        left: 1px;
-        position: relative;
-        height: 42px;
-      }
-      /*{nav Link}*/
-      .ntt-nav-menu {
-        text-align: center;
-        margin-left: 3.5rem;
-      }
-      .ntt-nav-menulist {
-        display: flex;
-        list-style: none;
-      }
-
-      /*{nav Link}*/
-
-      .ntt-navlink {
-        text-decoration: none;
-        font-size: var(--font-Size-small);
-        font-weight: var(--font-weight-small);
-        padding: 0rem 1rem;
-        color: #380a53;
-        height: 12px;
-        align-items: center;
-        text-decoration: none;
-        display: flex;
-      }
-
-      .ntt-navlink .fa {
-        margin-right: 10px;
-        font-size: var(--font-Size-medium);
-      }
-      /*{nav right}*/
-
-      .ntt-navadd:hover {
-        background-color: var(--color-red-Smooth);
-        color: var(--color-light);
-      }
-      .ntt-navadd {
-        color: var(--color-dark);
-        text-align: end;
-        border: 1px solid var(--color-border);
-        padding: 9px 7px;
-        border-radius: 0.5rem;
-        -webkit-border-radius: 0.5rem;
-        -moz-border-radius: 0.5rem;
-        -ms-border-radius: 0.5rem;
-        -o-border-radius: 0.5rem;
-        transition: all 0.9s;
-        -webkit-transition: all 0.9s;
-        -moz-transition: all 0.9s;
-        -ms-transition: all 0.9s;
-        -o-transition: all 0.9s;
-      }
-      .ntt-nav-add {
-        display: flex;
-        align-items: center;
-      }
-      .three {
-        display: none;
-      }
-      .mobile-menu {
-        display: none;
-        transition: all 0.4s ease-in-out;
-        -webkit-transition: all 0.4s ease-in-out;
-        -moz-transition: all 0.4s ease-in-out;
-        -ms-transition: all 0.4s ease-in-out;
-        -o-transition: all 0.4s ease-in-out;
-      }
-      @media only screen and (max-width: 768px) {
-        .ntt-nav-menu {
-          display: none;
-        }
-        /* {hamburger} */
-        .three {
-          list-style: none;
-          display: block;
-          -webkit-box-sizing: border-box;
-          -moz-box-sizing: border-box;
-          box-sizing: border-box;
-          background-color: transparent;
-          color: var(--color-dark);
-          padding-left: 0.7rem;
-          text-align: center;
-          border: transparent;
-        }
-        .hamburger .line {
-          width: 20px;
-          height: 2px;
-          background-color: var(--color-dark);
-          margin-left: 10px;
-          display: block;
-          margin: 8px auto;
-          transition: all 0.3s ease-in-out;
-          -webkit-transition: all 0.3s ease-in-out;
-          -o-transition: all 0.3s ease-in-out;
-          -moz-transition: all 0.3s ease-in-out;
-          -ms-transition: all 0.3s ease-in-out;
-        }
-        .hamburger .line.line-2 {
-          width: 20px;
-        }
-        .hamburger .line.line-scroll {
-          background-color: transparent;
-        }
-        .hamburger:hover {
-          cursor: pointer;
-        }
-        #hamburger-1.is-active .line:nth-child(2) {
-          opacity: 0;
-        }
-        #hamburger-1.is-active .line:nth-child(1) {
-          -webkit-transform: translateY(10px) rotate(45deg);
-          -ms-transform: translateY(10px) rotate(45deg);
-          -o-transform: translateY(10px) rotate(45deg);
-          transform: translateY(10px) rotate(45deg);
-        }
-        #hamburger-1.is-active .line:nth-child(3) {
-          -webkit-transform: translateY(-10px) rotate(-45deg);
-          -ms-transform: translateY(-10px) rotate(-45deg);
-          -o-transform: translateY(-10px) rotate(-45deg);
-          transform: translateY(-10px) rotate(-45deg);
-        }
-        /* {mobile::menu} */
-        .mobile-menu {
-          display: none;
-          transition: all 0.8s ease-in-out !important;
-          -webkit-transition: all 0.8s ease-in-out !important;
-          -moz-transition: all 0.8s ease-in-out !important;
-          -ms-transition: all 0.8s ease-in-out !important;
-          -o-transition: all 0.8s ease-in-out !important;
-        }
-        .mobile-menu-show:hover {
-          border: 1px solid var(--color-border-hover);
-        }
-        .mobile-menu-show {
-          width: auto;
-          justify-content: center;
-          display: block;
-          position: fixed;
-          top: 80px;
-          left: 1rem;
-          right: 1rem;
-          background-color: var(--color-light);
-          height: auto;
-          z-index: 1010;
-          border: 1px solid var(--color-border);
-          border-radius: 1rem;
-          -webkit-border-radius: 1rem;
-          -moz-border-radius: 1rem;
-          -ms-border-radius: 1rem;
-          -o-border-radius: 1rem;
-        }
-        .mobile-menu-show .ntt-mobile-menulist a {
-          gap: 10px;
-          color: var(--color-dark);
-        }
-        .mobile-menu-show .ntt-mobile-menulist {
-          display: block;
-          text-align: center;
-          padding: 10px;
-        }
-      }
-      /*{nav::drop::down}*/
-      .ntt-nav-drop {
-        display: none;
-      }
-      .pointer {
-        cursor: pointer;
-      }
-      .ntt-nav-drop-open:hover {
-        border: 1px solid var(--color-dark-75);
-      }
-      .ntt-nav-drop-open .ntt_nav-li,
-      .ntt-nav-drop-open .ntt-nav-menulist {
-        display: block;
-      }
-      .ntt-nav-drop-open {
-        top: 80px;
-        display: block;
-        z-index: 1011;
-        left: 50%;
-        position: fixed;
-        padding: 0.4rem;
-        background-color: var(--color-light);
-        border: 1px solid var(--color-dark-25);
-        border-radius: 1rem;
-        -webkit-border-radius: 1rem;
-        -moz-border-radius: 1rem;
-        -ms-border-radius: 1rem;
-        -o-border-radius: 1rem;
-      }
-      .ntt-nav-drop-open .ntt_nav-li .ntt-navlink:hover .fa {
-        color: var(--color-red-dark);
-      }
-      .ntt-nav-drop-open .ntt_nav-li .ntt-navlink:hover {
-        background-color: var(--color-light-80);
-      }
-      .ntt-nav-drop-open .ntt_nav-li .ntt-navlink {
-        background-color: var(--color-light);
-        margin: 0.2rem;
-        padding: 2rem 0.4rem 2rem 0.1rem;
-        border-radius: 0.5rem;
-        -webkit-border-radius: 0.5rem;
-        -moz-border-radius: 0.5rem;
-        -ms-border-radius: 0.5rem;
-        -o-border-radius: 0.5rem;
-      }
-      .ntt-nav-drop-open .ntt_nav-li .ntt-navlink .drop-box {
-        display: flex;
-      }
-      .ntt-nav-drop-open .ntt_nav-li .ntt-navlink .drop-box-text {
-        display: block;
-      }
-      .ntt-nav-drop-open .ntt_nav-li .ntt-navlink .fa {
-        font-size: var(--font-Size-large);
-        width: 75px;
-      }
-      /*{nav::drop::down}*/
-      /*{mob::menu::docm}*/
-      .ntt-nav-docm {
-        display: none;
-      }
-      .ntt-nav-docm-open {
-        display: flex;
-        flex-flow: column;
-        align-items: center;
-        justify-content: center;
-      }
-      /*{mob::menu::docm}*/
-      /* {nav} */
-    </style>
   </head>
   <body>
     <!--{header}-->
+
     <header>
       <!--{home}-->
       <div class="ntt-header">
@@ -336,7 +52,7 @@
           <div class="container ntt-padding">
             <div class="row content-home">
               <div class="home-title">
-                <h1>
+                <h1 class="hero-heading custom">
                   WeProvide <br />
                   BestServices
                 </h1>
@@ -366,10 +82,13 @@
       </div>
       <!--{home}-->
     </header>
+
     <!--{header}-->
+
     <!--{nav}-->
+
     <div class="ntt-padding">
-      <nav class="ntt-nav">
+      <nav class="ntt-nav border_box">
         <a href="#home" class="ntt_nav-brand" id="node-0">
           <div class="rotating-item" id="gear">
             <svg
@@ -427,8 +146,9 @@
           <ul class="ntt-nav-menulist">
             <li class="ntt_nav-li" style="display: flex">
               <a href="#services" class="ntt-navlink" id="node-1"> Work </a>
-              <a href="#client" class="ntt-navlink" id="node-3"> Client </a>
+
               <a href="#team" class="ntt-navlink" id="node-2"> Team </a>
+
               <a class="ntt-navlink pointer" id="drop-docs"> Docs </a>
             </li>
           </ul>
@@ -489,6 +209,7 @@
       </nav>
     </div>
     <!--{drop::down}-->
+
     <div class="ntt-nav-drop" id="nav-drop">
       <ul class="ntt-nav-menulist">
         <li class="ntt_nav-li">
@@ -497,10 +218,9 @@
             target="_blank"
             class="ntt-navlink"
             ><div class="drop-box">
-              <i class="fa fa-city"></i>
               <div class="drop-box-text">
                 <p>Overview</p>
-                <div class="desc-text">Story of Nusa Timore</div>
+                <div class="disable">Story of Nusa Timore</div>
               </div>
             </div>
           </a>
@@ -511,10 +231,9 @@
             class="ntt-navlink"
           >
             <div class="drop-box">
-              <i class="fa fa-file-contract"></i>
               <div class="drop-box-text">
                 <p>Legal</p>
-                <div class="desc-text">Legality of Nusa Timore</div>
+                <div class="disable">Legality of Nusa Timore</div>
               </div>
             </div>
           </a>
@@ -525,10 +244,9 @@
             class="ntt-navlink"
           >
             <div class="drop-box">
-              <i class="fa fa-handshake"></i>
               <div class="drop-box-text">
                 <p>Price</p>
-                <div class="desc-text">See Our Price List</div>
+                <div class="disable">See Our Price List</div>
               </div>
             </div>
           </a>
@@ -539,10 +257,9 @@
             class="ntt-navlink"
           >
             <div class="drop-box">
-              <i class="fa fa-layer-group"></i>
               <div class="drop-box-text">
                 <p>Experience</p>
-                <div class="desc-text">See Our Experiences</div>
+                <div class="disable">See Our Experiences</div>
               </div>
             </div>
           </a>
@@ -550,14 +267,14 @@
       </ul>
     </div>
     <!--{drop::down}-->
+
     <!--{mobile::menu-->
-    <div id="mobMenu" class="mobile-menu">
+
+    <div id="mobMenu" class="mobile-menu border_box">
       <ul class="ntt-mobile-menulist">
         <li>
           <a href="#services" class="ntt-mobilelink">Work</a>
         </li>
-
-        <li><a href="#client" class="ntt-mobilelink">Client</a></li>
 
         <li><a href="#team" class="ntt-mobilelink">Team</a></li>
 
@@ -574,7 +291,7 @@
                   <div class="drop-box">
                     <div class="drop-box-text">
                       <p>Overview</p>
-                      <div class="desc-text">story about us</div>
+                      <div class="disable">story about us</div>
                     </div>
                   </div>
                 </a>
@@ -586,7 +303,7 @@
                   ><div class="drop-box">
                     <div class="drop-box-text">
                       <p>Legal</p>
-                      <div class="desc-text">Legality of Nusa Timore</div>
+                      <div class="disable">Legality of Nusa Timore</div>
                     </div>
                   </div>
                 </a>
@@ -601,7 +318,7 @@
                   <div class="drop-box">
                     <div class="drop-box-text">
                       <p>Price</p>
-                      <div class="desc-text">See Our Price List</div>
+                      <div class="disable">See Our Price List</div>
                     </div>
                   </div>
                 </a>
@@ -614,7 +331,7 @@
                   <div class="drop-box">
                     <div class="drop-box-text">
                       <p>Experience</p>
-                      <div class="desc-text">See Our Experiences</div>
+                      <div class="disable">See Our Experiences</div>
                     </div>
                   </div>
                 </a>
@@ -626,10 +343,12 @@
       </ul>
     </div>
     <!--{nav}-->
+
     <!--{main}-->
-    <main class="ntt-page overflow-hidden">
+    <main class="ntt-page">
       <div class="ntt-padding">
         <!--{services}-->
+
         <section id="services">
           <div class="services_ntt_list">
             <!-- grid -->
@@ -639,11 +358,12 @@
                   <h1>
                     <span>Nusa Timore</span> <br />
                     Work
-                    <span>
+                    <span class="shape-spin">
                       <svg
-                        style="position: relative; top: -10; left: -10"
-                        width="30"
-                        height="30"
+                        style="position: relative; top: -25; left: -10"
+                        width="50"
+                        height="50"
+                        class="shape-spin"
                         viewBox="0 0 200 200"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
@@ -669,7 +389,7 @@
                             <stop offset="1" stop-color="#fc0" />
                           </linearGradient>
                           <clipPath id="clip0_104_26">
-                            <rect width="200" height="200" fill="white" />
+                            <rect width="200" height="200" />
                           </clipPath>
                         </defs>
                       </svg>
@@ -696,7 +416,7 @@
           <!-- grid -->
           <div class="ntt_services-item">
             <div class="ntt_services-item_list">
-              <div class="ntt_services-item-box">
+              <div class="ntt_services-item-box border_box">
                 <div class="ntt_services-item-wrapper">
                   <div
                     class="ntt_services-item-image"
@@ -717,19 +437,19 @@
                     </div>
                     <div class="ntt_services-item-btntxt">
                       <a
-                        class="button_primary"
+                        class="button_light"
                         target="_blank"
                         href="https://nusatimoretelematika.gitbook.io/docs/price-list/telco-infra"
                       >
                         Read Our Docs
                         <i class="fa fa-arrow-right"></i>
                       </a>
-                      <p class="desc-text">&amp; Get Pricing Detail</p>
+                      <p class="disable">&amp; Get Pricing Detail</p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="ntt_services-item-box">
+              <div class="ntt_services-item-box border_box">
                 <div class="ntt_services-item-wrapper">
                   <div
                     class="ntt_services-item-image"
@@ -748,14 +468,14 @@
                     </div>
                     <div class="ntt_services-item-btntxt">
                       <a
-                        class="button_primary"
+                        class="button_light"
                         target="_blank"
                         href="https://nusatimoretelematika.gitbook.io/docs/price-list/it-services"
                       >
                         Read Our Docs
                         <i class="fa fa-arrow-right"></i>
                       </a>
-                      <p class="desc-text">&amp; Get Pricing Detail</p>
+                      <p class="disable">&amp; Get Pricing Detail</p>
                     </div>
                   </div>
                 </div>
@@ -764,448 +484,9 @@
           </div>
         </section>
         <!--{services}-->
-        <!--{partner&client}-->
-        <!-- grid -->
-        <section id="client">
-          <div class="ntt_client-item_list">
-            <div class="ntt_client-item-box">
-              <div class="ntt_client-item-wrapper">
-                <div class="ntt_client-item-content">
-                  <!-- inside -->
-                  <div class="ntt_client-item_list-alt">
-                    <div
-                      class="ntt_client-item-box-alt ntt_client-item-image"
-                      style="
-                        background-image: url('./public/img/client-tl.jpg');
-                        height: auto;
-                      "
-                    >
-                      <div class="ntt_client-item-content-alt fade-bg">
-                        <div class="ntt_client-item-text">
-                          <h2>Grow Your Company</h2>
-                          <h5>
-                            Expand Your Bussiness with Nusa Timore as your
-                            helper
-                          </h5>
-                          <p>
-                            with profesional and experienced team we provide
-                            best support services for better works
-                          </p>
-                          <div class="btn-r-desk">
-                            <a
-                              href="https://nusatimoretelematika.gitbook.io/docs/experience/telco-infra"
-                              target="_blank"
-                              >Learn More <i class="fa fa-arrow-right"></i
-                            ></a>
-                            <span class="desc-text">about our experience</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- inside -->
-                  <!-- inside -->
-                  <div class="ntt_client-item_list-alt">
-                    <div class="ntt_client-item-box-alt">
-                      <div class="ntt_client-item-content-alt-logo">
-                        <div class="ntt_client-item-logo-title">
-                          <h1>
-                            Nusa Timore <br />
-                            Client
-                            <span>
-                              <svg
-                                style="position: relative; top: -10; left: -10"
-                                width="30"
-                                height="30"
-                                viewBox="0 0 200 200"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <g clip-path="url(#clip0_104_26)">
-                                  <path
-                                    fill-rule="evenodd"
-                                    clip-rule="evenodd"
-                                    d="M107.143 0H92.8571V82.7556L34.3401 24.2385L24.2386 34.3401L82.7556 92.8571H0V107.143H82.7555L24.2386 165.66L34.3401 175.761L92.8571 117.244V200H107.143V117.244L165.66 175.761L175.761 165.66L117.244 107.143H200V92.8571H117.244L175.761 34.34L165.66 24.2385L107.143 82.7555V0Z"
-                                    fill="url(#paint0_linear_104_26)"
-                                  />
-                                </g>
-                                <defs>
-                                  <linearGradient
-                                    id="paint0_linear_104_26"
-                                    x1="20.5"
-                                    y1="16"
-                                    x2="100"
-                                    y2="200"
-                                    gradientUnits="userSpaceOnUse"
-                                  >
-                                    <stop stop-color="#fc0" />
-                                    <stop offset="1" stop-color="#fc0" />
-                                  </linearGradient>
-                                  <clipPath id="clip0_104_26">
-                                    <rect
-                                      width="200"
-                                      height="200"
-                                      fill="white"
-                                    />
-                                  </clipPath>
-                                </defs>
-                              </svg>
-                            </span>
-                          </h1>
-                          <p>Client of Nusa Timore Telematika</p>
-                        </div>
-                        <div class="ntt_client-logo-container">
-                          <div class="home-logo-wrapper">
-                            <div class="client-grid">
-                              <!-- firts -->
-                              <!-- client-logo -->
-                              <a href="#" class="ntt_client-logo-box">
-                                <img
-                                  src="./public/favicon/ntt-48x48.png"
-                                  width="48"
-                                  alt="Client Logo-1"
-                                  class="ntt_client-logo"
-                                  srcset=""
-                                />
-                                <div class="ntt_client-logo-title">
-                                  <div>Nusa Timore Client</div>
-                                </div>
-                              </a>
-                              <!-- client-logo -->
-                              <!-- client-logo -->
-                              <a href="#" class="ntt_client-logo-box">
-                                <img
-                                  src="./public/favicon/ntt-48x48.png"
-                                  width="48"
-                                  alt="Client Logo-1"
-                                  class="ntt_client-logo"
-                                  srcset=""
-                                />
-                                <div class="ntt_client-logo-title">
-                                  <div>Nusa Timore Client</div>
-                                </div>
-                              </a>
-                              <!-- client-logo -->
-                              <!-- client-logo -->
-                              <a href="#" class="ntt_client-logo-box">
-                                <img
-                                  src="./public/favicon/ntt-48x48.png"
-                                  width="48"
-                                  alt="Client Logo-1"
-                                  class="ntt_client-logo"
-                                  srcset=""
-                                />
-                                <div class="ntt_client-logo-title">
-                                  <div>Nusa Timore Client</div>
-                                </div>
-                              </a>
-                              <!-- client-logo -->
-                              <!-- client-logo -->
-                              <a href="#" class="ntt_client-logo-box">
-                                <img
-                                  src="./public/favicon/ntt-48x48.png"
-                                  width="48"
-                                  alt="Client Logo-1"
-                                  class="ntt_client-logo"
-                                  srcset=""
-                                />
-                                <div class="ntt_client-logo-title">
-                                  <div>Nusa Timore Client</div>
-                                </div>
-                              </a>
-                              <!-- client-logo -->
-                              <!-- client-logo -->
-                              <a href="#" class="ntt_client-logo-box">
-                                <img
-                                  src="./public/favicon/ntt-48x48.png"
-                                  width="48"
-                                  alt="Client Logo-1"
-                                  class="ntt_client-logo"
-                                  srcset=""
-                                />
-                                <div class="ntt_client-logo-title">
-                                  <div>Nusa Timore Client</div>
-                                </div>
-                              </a>
-                              <!-- client-logo -->
-                              <!-- client-logo -->
-                              <a href="#" class="ntt_client-logo-box">
-                                <img
-                                  src="./public/favicon/ntt-48x48.png"
-                                  width="48"
-                                  alt="Client Logo-1"
-                                  class="ntt_client-logo"
-                                  srcset=""
-                                />
-                                <div class="ntt_client-logo-title">
-                                  <div>Nusa Timore Client</div>
-                                </div>
-                              </a>
-                              <!-- client-logo -->
-                              <!-- client-logo -->
-                              <a href="#" class="ntt_client-logo-box">
-                                <img
-                                  src="./public/favicon/ntt-48x48.png"
-                                  width="48"
-                                  alt="Client Logo-1"
-                                  class="ntt_client-logo"
-                                  srcset=""
-                                />
-                                <div class="ntt_client-logo-title">
-                                  <div>Nusa Timore Client</div>
-                                </div>
-                              </a>
-                              <!-- client-logo -->
-                              <!-- client-logo -->
-                              <a href="#" class="ntt_client-logo-box">
-                                <img
-                                  src="./public/favicon/ntt-48x48.png"
-                                  width="48"
-                                  alt="Client Logo-1"
-                                  class="ntt_client-logo"
-                                  srcset=""
-                                />
-                                <div class="ntt_client-logo-title">
-                                  <div>Nusa Timore Client</div>
-                                </div>
-                              </a>
-                              <!-- client-logo -->
-                              <!-- client-logo -->
-                              <a href="#" class="ntt_client-logo-box">
-                                <img
-                                  src="./public/favicon/ntt-48x48.png"
-                                  width="48"
-                                  alt="Client Logo-1"
-                                  class="ntt_client-logo"
-                                  srcset=""
-                                />
-                                <div class="ntt_client-logo-title">
-                                  <div>Nusa Timore Client</div>
-                                </div>
-                              </a>
-                              <!-- client-logo -->
-                              <!-- client-logo -->
-                              <a href="#" class="ntt_client-logo-box">
-                                <img
-                                  src="./public/favicon/ntt-48x48.png"
-                                  width="48"
-                                  alt="Client Logo-1"
-                                  class="ntt_client-logo"
-                                  srcset=""
-                                />
-                                <div class="ntt_client-logo-title">
-                                  <div>Nusa Timore Client</div>
-                                </div>
-                              </a>
-                              <!-- client-logo -->
-
-                              <!-- firts -->
-
-                              <!-- second -->
-                              <!-- client-logo -->
-                              <a href="#" class="ntt_client-logo-box">
-                                <img
-                                  src="./public/favicon/ntt-48x48.png"
-                                  width="48"
-                                  alt="Client Logo-1"
-                                  class="ntt_client-logo"
-                                  srcset=""
-                                />
-                                <div class="ntt_client-logo-title">
-                                  <div>Nusa Timore Client</div>
-                                </div>
-                              </a>
-                              <!-- client-logo -->
-                              <!-- client-logo -->
-                              <a href="#" class="ntt_client-logo-box">
-                                <img
-                                  src="./public/favicon/ntt-48x48.png"
-                                  width="48"
-                                  alt="Client Logo-1"
-                                  class="ntt_client-logo"
-                                  srcset=""
-                                />
-                                <div class="ntt_client-logo-title">
-                                  <div>Nusa Timore Client</div>
-                                </div>
-                              </a>
-                              <!-- client-logo -->
-                              <!-- client-logo -->
-                              <a href="#" class="ntt_client-logo-box">
-                                <img
-                                  src="./public/favicon/ntt-48x48.png"
-                                  width="48"
-                                  alt="Client Logo-1"
-                                  class="ntt_client-logo"
-                                  srcset=""
-                                />
-                                <div class="ntt_client-logo-title">
-                                  <div>Nusa Timore Client</div>
-                                </div>
-                              </a>
-                              <!-- client-logo -->
-                              <!-- client-logo -->
-                              <a href="#" class="ntt_client-logo-box">
-                                <img
-                                  src="./public/favicon/ntt-48x48.png"
-                                  width="48"
-                                  alt="Client Logo-1"
-                                  class="ntt_client-logo"
-                                  srcset=""
-                                />
-                                <div class="ntt_client-logo-title">
-                                  <div>Nusa Timore Client</div>
-                                </div>
-                              </a>
-                              <!-- client-logo -->
-                              <!-- client-logo -->
-                              <a href="#" class="ntt_client-logo-box">
-                                <img
-                                  src="./public/favicon/ntt-48x48.png"
-                                  width="48"
-                                  alt="Client Logo-1"
-                                  class="ntt_client-logo"
-                                  srcset=""
-                                />
-                                <div class="ntt_client-logo-title">
-                                  <div>Nusa Timore Client</div>
-                                </div>
-                              </a>
-                              <!-- client-logo -->
-                              <!-- client-logo -->
-                              <a href="#" class="ntt_client-logo-box">
-                                <img
-                                  src="./public/favicon/ntt-48x48.png"
-                                  width="48"
-                                  alt="Client Logo-1"
-                                  class="ntt_client-logo"
-                                  srcset=""
-                                />
-                                <div class="ntt_client-logo-title">
-                                  <div>Nusa Timore Client</div>
-                                </div>
-                              </a>
-                              <!-- client-logo -->
-                              <!-- client-logo -->
-                              <a href="#" class="ntt_client-logo-box">
-                                <img
-                                  src="./public/favicon/ntt-48x48.png"
-                                  width="48"
-                                  alt="Client Logo-1"
-                                  class="ntt_client-logo"
-                                  srcset=""
-                                />
-                                <div class="ntt_client-logo-title">
-                                  <div>Nusa Timore Client</div>
-                                </div>
-                              </a>
-                              <!-- client-logo -->
-                              <!-- client-logo -->
-                              <a href="#" class="ntt_client-logo-box">
-                                <img
-                                  src="./public/favicon/ntt-48x48.png"
-                                  width="48"
-                                  alt="Client Logo-1"
-                                  class="ntt_client-logo"
-                                  srcset=""
-                                />
-                                <div class="ntt_client-logo-title">
-                                  <div>Nusa Timore Client</div>
-                                </div>
-                              </a>
-                              <!-- client-logo -->
-                              <!-- client-logo -->
-                              <a href="#" class="ntt_client-logo-box">
-                                <img
-                                  src="./public/favicon/ntt-48x48.png"
-                                  width="48"
-                                  alt="Client Logo-1"
-                                  class="ntt_client-logo"
-                                  srcset=""
-                                />
-                                <div class="ntt_client-logo-title">
-                                  <div>Nusa Timore Client</div>
-                                </div>
-                              </a>
-                              <!-- client-logo -->
-                              <!-- client-logo -->
-                              <a href="#" class="ntt_client-logo-box">
-                                <img
-                                  src="./public/favicon/ntt-48x48.png"
-                                  width="48"
-                                  alt="Client Logo-1"
-                                  class="ntt_client-logo"
-                                  srcset=""
-                                />
-                                <div class="ntt_client-logo-title">
-                                  <div>Nusa Timore Client</div>
-                                </div>
-                              </a>
-                              <!-- client-logo -->
-
-                              <!-- second -->
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- inside -->
-                </div>
-              </div>
-            </div>
-            <div class="ntt_client-item-box">
-              <div class="ntt_client-item-content">
-                <!-- inside -->
-                <div class="ntt_client-item_list-alt">
-                  <div class="ntt_client-item-box-alt">
-                    <div class="ntt_client-item-content-alt">
-                      <div class="ntt_client-content-tr">
-                        <h2>Nusa Timore Partner</h2>
-                        <p>
-                          Lorem ipsum, dolor sit amet consectetur adipisicing
-                          elit. Ea doloremque dicta cum sapiente fuga,
-                          voluptatum adipisci, ut aut tenetur quaerat hic, animi
-                          recusandae soluta fugiat distinctio a. Dolor aliquam
-                          rerum odio quasi obcaecati.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="ntt_client-item_list-alt">
-                <div
-                  class="ntt_client-item-box-alt ntt_client-item-image"
-                  style="
-                    background-image: url('./public/img/partner-bg.jpeg');
-                    height: auto;
-                  "
-                >
-                  <div class="ntt_client-item-content-alt">
-                    <div class="ntt_client-item-text-rb">
-                      <div class="ntt_client-content-tr-img">
-                        <img
-                          src="./public/favicon/nsn-color.png"
-                          height="160"
-                          alt=""
-                        />
-                      </div>
-                      <div class="ntt_client-content-tr-title">
-                        <h3>NETWORK <br />SOLUTION <br />NUSANTARA</h3>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- inside -->
-          </div>
-        </section>
-        <!-- grid -->
-        <!--{partner&client}-->
 
         <!--{team}-->
+
         <section id="team">
           <div class="team_ntt_list">
             <!--{grid}-->
@@ -1213,13 +494,15 @@
               <div class="team_ntt-wrapper">
                 <div class="team_ntt-title">
                   <h1>
-                    <span>Meet Nusa Timore</span> <br />
+                    <span>Nusa Timore</span> <br />
                     Team
-                    <span>
+                    <span class="shape-spin">
                       <svg
-                        style="position: relative; top: -10; left: -10"
-                        width="30"
-                        height="30"
+                        style="position: relative; top: -25; left: -10"
+                        width="50"
+                        height="50"
+                        class="shape-spin"
+                        height="50"
                         viewBox="0 0 200 200"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
@@ -1273,10 +556,10 @@
             <div class="swiper-container">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <div class="product-grid">
+                  <div class="product-grid border_box">
                     <div class="product-image">
                       <a href="javascript:void(0)">
-                        <h3>MITHE</h3>
+                        <h3 class="home-team_heading">MITHE</h3>
                         <img
                           class="pic-1"
                           width="240px"
@@ -1288,10 +571,10 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="product-grid topdown">
+                  <div class="product-grid border_box topdown">
                     <div class="product-image">
                       <a href="javascript:void(0)">
-                        <h3>ABANK</h3>
+                        <h3 class="home-team_heading">ABANK</h3>
                         <img
                           class="pic-2"
                           width="240px"
@@ -1303,10 +586,10 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="product-grid">
+                  <div class="product-grid border_box">
                     <div class="product-image">
                       <a href="javascript:void(0)">
-                        <h3>INDAH</h3>
+                        <h3 class="home-team_heading">INDAH</h3>
                         <img
                           class="pic-1"
                           width="240px"
@@ -1318,10 +601,10 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="product-grid topdown">
+                  <div class="product-grid border_box topdown">
                     <div class="product-image">
                       <a href="javascript:void(0)">
-                        <h3>KA-AN</h3>
+                        <h3 class="home-team_heading">KA-AN</h3>
                         <img
                           class="pic-2"
                           width="240px"
@@ -1333,10 +616,10 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="product-grid">
+                  <div class="product-grid border_box">
                     <div class="product-image">
                       <a href="javascript:void(0)">
-                        <h3>JO</h3>
+                        <h3 class="home-team_heading">JO</h3>
                         <img
                           class="pic-1"
                           width="240px"
@@ -1348,10 +631,10 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="product-grid topdown">
+                  <div class="product-grid border_box topdown">
                     <div class="product-image">
                       <a href="javascript:void(0)">
-                        <h3>HERNAZS</h3>
+                        <h3 class="home-team_heading">NAZS</h3>
                         <img
                           class="pic-1"
                           width="240px"
@@ -1363,10 +646,10 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="product-grid">
+                  <div class="product-grid border_box">
                     <div class="product-image">
                       <a href="javascript:void(0)">
-                        <h3>UMBU</h3>
+                        <h3 class="home-team_heading">UMBU</h3>
                         <img
                           class="pic-2"
                           width="240px"
@@ -1378,10 +661,10 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="product-grid">
+                  <div class="product-grid border_box">
                     <div class="product-image">
                       <a href="javascript:void(0)">
-                        <h3>CHA.</h3>
+                        <h3 class="home-team_heading">CHA.</h3>
                         <img
                           class="pic-2"
                           width="240px"
@@ -1399,51 +682,282 @@
         </section>
         <!--{team}-->
 
+        <!--{FaQ}-->
+
+        <section id="ntt-faq">
+          <div class="faq_ntt_list">
+            <!-- grid -->
+            <div class="faq_ntt-box">
+              <div class="faq_ntt-wrapper">
+                <div class="faq_ntt-title">
+                  <h1>
+                    Have Something <br />
+                    in mind ?
+                  </h1>
+                  <div class="faq_ntt-title-btn">
+                    <p>Got other questions? Check out our</p>
+                    <a
+                      target="_blank"
+                      class="btn_ext-unl"
+                      href="https://nusatimoretelematika.gitbook.io/docs/"
+                    >
+                      docs
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- grid -->
+            <div class="faq_ntt-box">
+              <div class="faq_ntt-wrapper">
+                <!--{accor}-->
+                <div class="accordion-wrapper">
+                  <div class="accordion">
+                    <input type="radio" name="radio-a" id="check1" checked />
+                    <label class="accordion-label" for="check1">
+                      <i class="fa fa-plus"></i>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing?
+                      </p></label
+                    >
+                    <div class="accordion-content">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Odit temporibus sequi suscipit ex deleniti eveniet enim,
+                        sint dolorem laborum soluta consequatur sed eum quae
+                        aliquid et minima repellendus vitae aut?
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion">
+                    <input type="radio" name="radio-a" id="check2" checked />
+                    <label class="accordion-label" for="check2">
+                      <i class="fa fa-plus"></i>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing.?
+                      </p></label
+                    >
+                    <div class="accordion-content">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Odit temporibus sequi suscipit ex deleniti eveniet enim,
+                        sint dolorem laborum soluta consequatur sed eum quae
+                        aliquid et minima repellendus vitae aut?
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion">
+                    <input type="radio" name="radio-a" id="check3" checked />
+                    <label class="accordion-label" for="check3">
+                      <i class="fa fa-plus"></i>
+                      <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing.?
+                      </p></label
+                    >
+                    <div class="accordion-content">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Odit temporibus sequi suscipit ex deleniti eveniet enim,
+                        sint dolorem laborum soluta consequatur sed eum quae
+                        aliquid et minima repellendus vitae aut?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!--{accor}-->
+              </div>
+            </div>
+            <!-- grid -->
+          </div>
+        </section>
+
+        <!--{FaQ}-->
+        <div class="line_devider"></div>
+
+        <!--{products}-->
+
+        <section id="ntt_products">
+          <div class="ntt_tabs-menu border_box">
+            <div class="ntt_tabs">
+              <h6 class="active">Page One</h6>
+              <h6>Page Two</h6>
+            </div>
+          </div>
+          <div class="ntt_tabs-content">
+            <div class="ntt_tabs-products active">
+              <h2>Page One Content</h2>
+              <p>
+                AWALLLL <br />Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Optio earum maxime non neque, quae esse beatae
+                dolores nemo deleniti quasi debitis unde eum, ipsa illum.
+                Dolores nisi atque odio velit omnis minus, sint quasi eum
+                corporis tempora eius tempore, ducimus eos quibusdam magni
+                laudantium qui, error dicta cumque maiores. Nulla magnam itaque
+                alias cupiditate id eveniet non expedita dolorem, nisi excepturi
+                illum soluta modi deleniti fugiat at porro sequi, placeat ex
+                consectetur eligendi delectus eaque quod aliquam. Explicabo
+                harum voluptas vero, cum eum aliquid sint laboriosam, provident
+                expedita deleniti quod corporis tenetur libero ab. Labore ullam
+                unde quidem amet voluptate?
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio
+                earum maxime non neque, quae esse beatae dolores nemo deleniti
+                quasi debitis unde eum, ipsa illum. Dolores nisi atque odio
+                velit omnis minus, sint quasi eum corporis tempora eius tempore,
+                ducimus eos quibusdam magni laudantium qui, error dicta cumque
+                maiores. Nulla magnam itaque alias cupiditate id eveniet non
+                expedita dolorem, nisi excepturi illum soluta modi deleniti
+                fugiat at porro sequi, placeat ex consectetur eligendi delectus
+                eaque quod aliquam. Explicabo harum voluptas vero, cum eum
+                aliquid sint laboriosam, provident expedita deleniti quod
+                corporis tenetur libero ab. Labore ullam unde quidem amet
+                voluptate?
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio
+                earum maxime non neque, quae esse beatae dolores nemo deleniti
+                quasi debitis unde eum, ipsa illum. Dolores nisi atque odio
+                velit omnis minus, sint quasi eum corporis tempora eius tempore,
+                ducimus eos quibusdam magni laudantium qui, error dicta cumque
+                maiores. Nulla magnam itaque alias cupiditate id eveniet non
+                expedita dolorem, nisi excepturi illum soluta modi deleniti
+                fugiat at porro sequi, placeat ex consectetur eligendi delectus
+                eaque quod aliquam. Explicabo harum voluptas vero, cum eum
+                aliquid sint laboriosam, provident expedita deleniti quod
+                corporis tenetur libero ab. Labore ullam unde quidem amet
+                voluptate?
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio
+                earum maxime non neque, quae esse beatae dolores nemo deleniti
+                quasi debitis unde eum, ipsa illum. Dolores nisi atque odio
+                velit omnis minus, sint quasi eum corporis tempora eius tempore,
+                ducimus eos quibusdam magni laudantium qui, error dicta cumque
+                maiores. Nulla magnam itaque alias cupiditate id eveniet non
+                expedita dolorem, nisi excepturi illum soluta modi deleniti
+                fugiat at porro sequi, placeat ex consectetur eligendi delectus
+                eaque quod aliquam. Explicabo harum voluptas vero, cum eum
+                aliquid sint laboriosam, provident expedita deleniti quod
+                corporis tenetur libero ab. Labore ullam unde quidem amet
+                voluptate?
+              </p>
+            </div>
+            <div class="ntt_tabs-products">
+              <h2>Page Two Content</h2>
+              <p>
+                AWALLLL <br />
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio
+                earum maxime non neque, quae esse beatae dolores nemo deleniti
+                quasi debitis unde eum, ipsa illum. Dolores nisi atque odio
+                velit omnis minus, sint quasi eum corporis tempora eius tempore,
+                ducimus eos quibusdam magni laudantium qui, error dicta cumque
+                maiores. Nulla magnam itaque alias cupiditate id eveniet non
+                expedita dolorem, nisi excepturi illum soluta modi deleniti
+                fugiat at porro sequi, placeat ex consectetur eligendi delectus
+                eaque quod aliquam. Explicabo harum voluptas vero, cum eum
+                aliquid sint laboriosam, provident expedita deleniti quod
+                corporis tenetur libero ab. Labore ullam unde quidem amet
+                voluptate?
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio
+                earum maxime non neque, quae esse beatae dolores nemo deleniti
+                quasi debitis unde eum, ipsa illum. Dolores nisi atque odio
+                velit omnis minus, sint quasi eum corporis tempora eius tempore,
+                ducimus eos quibusdam magni laudantium qui, error dicta cumque
+                maiores. Nulla magnam itaque alias cupiditate id eveniet non
+                expedita dolorem, nisi excepturi illum soluta modi deleniti
+                fugiat at porro sequi, placeat ex consectetur eligendi delectus
+                eaque quod aliquam. Explicabo harum voluptas vero, cum eum
+                aliquid sint laboriosam, provident expedita deleniti quod
+                corporis tenetur libero ab. Labore ullam unde quidem amet
+                voluptate?
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio
+                earum maxime non neque, quae esse beatae dolores nemo deleniti
+                quasi debitis unde eum, ipsa illum. Dolores nisi atque odio
+                velit omnis minus, sint quasi eum corporis tempora eius tempore,
+                ducimus eos quibusdam magni laudantium qui, error dicta cumque
+                maiores. Nulla magnam itaque alias cupiditate id eveniet non
+                expedita dolorem, nisi excepturi illum soluta modi deleniti
+                fugiat at porro sequi, placeat ex consectetur eligendi delectus
+                eaque quod aliquam. Explicabo harum voluptas vero, cum eum
+                aliquid sint laboriosam, provident expedita deleniti quod
+                corporis tenetur libero ab. Labore ullam unde quidem amet
+                voluptate?
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio
+                earum maxime non neque, quae esse beatae dolores nemo deleniti
+                quasi debitis unde eum, ipsa illum. Dolores nisi atque odio
+                velit omnis minus, sint quasi eum corporis tempora eius tempore,
+                ducimus eos quibusdam magni laudantium qui, error dicta cumque
+                maiores. Nulla magnam itaque alias cupiditate id eveniet non
+                expedita dolorem, nisi excepturi illum soluta modi deleniti
+                fugiat at porro sequi, placeat ex consectetur eligendi delectus
+                eaque quod aliquam. Explicabo harum voluptas vero, cum eum
+                aliquid sint laboriosam, provident expedita deleniti quod
+                corporis tenetur libero ab. Labore ullam unde quidem amet
+                voluptate?
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio
+                earum maxime non neque, quae esse beatae dolores nemo deleniti
+                quasi debitis unde eum, ipsa illum. Dolores nisi atque odio
+                velit omnis minus, sint quasi eum corporis tempora eius tempore,
+                ducimus eos quibusdam magni laudantium qui, error dicta cumque
+                maiores. Nulla magnam itaque alias cupiditate id eveniet non
+                expedita dolorem, nisi excepturi illum soluta modi deleniti
+                fugiat at porro sequi, placeat ex consectetur eligendi delectus
+                eaque quod aliquam. Explicabo harum voluptas vero, cum eum
+                aliquid sint laboriosam, provident expedita deleniti quod
+                corporis tenetur libero ab. Labore ullam unde quidem amet
+                voluptate?
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio
+                earum maxime non neque, quae esse beatae dolores nemo deleniti
+                quasi debitis unde eum, ipsa illum. Dolores nisi atque odio
+                velit omnis minus, sint quasi eum corporis tempora eius tempore,
+                ducimus eos quibusdam magni laudantium qui, error dicta cumque
+                maiores. Nulla magnam itaque alias cupiditate id eveniet non
+                expedita dolorem, nisi excepturi illum soluta modi deleniti
+                fugiat at porro sequi, placeat ex consectetur eligendi delectus
+                eaque quod aliquam. Explicabo harum voluptas vero, cum eum
+                aliquid sint laboriosam, provident expedita deleniti quod
+                corporis tenetur libero ab. Labore ullam unde quidem amet
+                voluptate?
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio
+                earum maxime non neque, quae esse beatae dolores nemo deleniti
+                quasi debitis unde eum, ipsa illum. Dolores nisi atque odio
+                velit omnis minus, sint quasi eum corporis tempora eius tempore,
+                ducimus eos quibusdam magni laudantium qui, error dicta cumque
+                maiores. Nulla magnam itaque alias cupiditate id eveniet non
+                expedita dolorem, nisi excepturi illum soluta modi deleniti
+                fugiat at porro sequi, placeat ex consectetur eligendi delectus
+                eaque quod aliquam. Explicabo harum voluptas vero, cum eum
+                aliquid sint laboriosam, provident expedita deleniti quod
+                corporis tenetur libero ab. Labore ullam unde quidem amet
+                voluptate?
+              </p>
+            </div>
+          </div>
+        </section>
+        <!--{products}-->
+
         <!--{contact}-->
+
         <section id="contact">
           <div class="ntt_contact_list">
             <div class="ntt_contact-box">
               <div class="ntt_contact-wrapper">
                 <!--{contact::item}-->
                 <div class="ntt-contact-title">
-                  <h1>
-                    Get In Touch
-                    <span>
-                      <svg
-                        style="position: relative; top: -10; left: -10"
-                        width="30"
-                        height="30"
-                        viewBox="0 0 200 200"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <g clip-path="url(#clip0_104_26)">
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M107.143 0H92.8571V82.7556L34.3401 24.2385L24.2386 34.3401L82.7556 92.8571H0V107.143H82.7555L24.2386 165.66L34.3401 175.761L92.8571 117.244V200H107.143V117.244L165.66 175.761L175.761 165.66L117.244 107.143H200V92.8571H117.244L175.761 34.34L165.66 24.2385L107.143 82.7555V0Z"
-                            fill="url(#paint0_linear_104_26)"
-                          />
-                        </g>
-                        <defs>
-                          <linearGradient
-                            id="paint0_linear_104_26"
-                            x1="20.5"
-                            y1="16"
-                            x2="100"
-                            y2="200"
-                            gradientUnits="userSpaceOnUse"
-                          >
-                            <stop stop-color="#fc0" />
-                            <stop offset="1" stop-color="#fc0" />
-                          </linearGradient>
-                          <clipPath id="clip0_104_26">
-                            <rect width="200" height="200" fill="white" />
-                          </clipPath>
-                        </defs>
-                      </svg>
-                    </span>
-                  </h1>
+                  <h1>Get In Touch</h1>
                 </div>
                 <div class="ntt-contact-subtitle">
                   <h4>Head Office</h4>
@@ -1511,6 +1025,7 @@
             </div>
           </div>
         </section>
+
         <!--{contact}-->
       </div>
     </main>
@@ -1534,5 +1049,62 @@
     <script src="./src/dist/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./src/js/main.js"></script>
+    <script>
+      //==>Swipper<==//
+      var swiper = new Swiper(".swiper-container", {
+        spaceBetween: 10,
+        // Responsive breakpoints
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 1.1,
+          },
+          // when window width is >= 480px
+          480: {
+            slidesPerView: 2.1,
+          },
+          // when window width is >= 667px
+          667: {
+            slidesPerView: 3.1,
+          },
+          // when window width is >= 920px
+          920: {
+            slidesPerView: 4.1,
+          },
+          // when window width is >= 1200px
+          1200: {
+            slidesPerView: 5.2,
+          },
+        },
+      });
+    </script>
+    <script>
+      let tabs = document.querySelectorAll(".ntt_tabs h6");
+
+      let tabContents = document.querySelectorAll(
+        ".ntt_tabs-content .ntt_tabs-products"
+      );
+      tabs.forEach((tab, index) => {
+        tab.addEventListener("click", () => {
+          tabContents.forEach((content) => {
+            content.classList.remove("active");
+          });
+          tabs.forEach((tab) => {
+            tab.classList.remove("active");
+          });
+          tabContents[index].classList.add("active");
+          tabs[index].classList.add("active");
+
+          // Scroll smoothly to the top of  tabs-menu
+          $("html, body").animate(
+            {
+              scrollTop:
+                $(".ntt_tabs-menu") && $(".ntt_tabs-content").offset().top,
+            },
+            600
+          ); // Adjust the speed (600ms) as needed
+        });
+      });
+    </script>
   </body>
 </html>

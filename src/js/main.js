@@ -3,7 +3,6 @@ const navDrop = document.querySelector("#nav-drop");
 const node0 = document.querySelector("#node-0");
 const node1 = document.querySelector("#node-1");
 const node2 = document.querySelector("#node-2");
-const node3 = document.querySelector("#node-3");
 const node4 = document.querySelector("#node-4");
 const node5 = document.querySelector("#node-5");
 
@@ -27,10 +26,6 @@ node1.addEventListener("mouseover", function () {
   navDrop.classList.add("ntt-nav-drop");
 });
 node2.addEventListener("mouseover", function () {
-  navDrop.classList.remove("ntt-nav-drop-open");
-  navDrop.classList.add("ntt-nav-drop");
-});
-node3.addEventListener("mouseover", function () {
   navDrop.classList.remove("ntt-nav-drop-open");
   navDrop.classList.add("ntt-nav-drop");
 });
@@ -61,33 +56,6 @@ window.addEventListener("click", function (e) {
     MobMenu.classList.add("mobile-menu");
     hamBurger1.classList.add("hamburger");
   }
-});
-//==>Swipper<==//
-var swiper = new Swiper(".swiper-container", {
-  spaceBetween: 10,
-  // Responsive breakpoints
-  breakpoints: {
-    // when window width is >= 320px
-    320: {
-      slidesPerView: 1.1,
-    },
-    // when window width is >= 480px
-    480: {
-      slidesPerView: 2.1,
-    },
-    // when window width is >= 667px
-    667: {
-      slidesPerView: 3.1,
-    },
-    // when window width is >= 920px
-    920: {
-      slidesPerView: 4.1,
-    },
-    // when window width is >= 1200px
-    1200: {
-      slidesPerView: 5.2,
-    },
-  },
 });
 
 const navDocmBtn = document.querySelector("#nav-docm-btn");
