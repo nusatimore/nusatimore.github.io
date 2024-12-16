@@ -1,3 +1,4 @@
+/* all css script is write by it dept. of nusa timore telematika */
 @font-face {
   font-family: "Inter Regular";
   src: url("https://cdn.prod.website-files.com/6215a9ebdd6ac00165655f15/64affe98aa7a4eeb6809552c_Inter-Regular.ttf")
@@ -87,6 +88,13 @@
   --radius--50: 24rem;
   --radius--small: 0.5rem;
   --radius--normal: 0.75rem;
+  /* {transition} */
+  --height-trans3: height 0.3s ease-in;
+  --height-trans7: height 0.7s ease-in;
+  --heightmx-trans3: max-height 0.3s ease-in;
+  --heightmx-trans7: max-height 0.7s ease-in;
+  --all-trans7: all 0.7s ease-in;
+  --all-trans3: all 0.3s ease-in;
 }
 ::selection {
   background-color: #261c6e;
@@ -133,13 +141,16 @@ img {
   border: 0;
 }
 a,
+button {
+  cursor: pointer;
+}
+a,
 ol,
 ul,
 li,
 button {
   text-decoration: none;
   list-style: none;
-  cursor: pointer;
   font-size: 1rem;
   font-family: Inter Medium, sans-serif;
   font-weight: 500;
@@ -260,11 +271,11 @@ p {
 }
 .border_box {
   border: 1px solid var(--color-border);
-  transition: all 0.9s;
-  -webkit-transition: all 0.9s;
-  -moz-transition: all 0.9s;
-  -ms-transition: all 0.9s;
-  -o-transition: all 0.9s;
+  transition: var(--all-trans7);
+  -webkit-transition: var(--all-trans7);
+  -moz-transition: var(--all-trans7);
+  -ms-transition: var(--all-trans7);
+  -o-transition: var(--all-trans7);
 }
 
 .home-title h1 {
@@ -339,7 +350,6 @@ p {
   flex: 1;
   width: 100%;
   padding: 1px;
-  transition: background-color 1s;
   display: flex;
   position: relative;
   overflow: hidden;
@@ -371,8 +381,8 @@ p {
 }
 
 .ntt-padding {
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 /* {scroll::spy} */
 section {
@@ -403,7 +413,6 @@ section {
   padding: 0.625rem 1rem;
   line-height: 1.25rem;
   text-decoration: none;
-  transition: background-color 0.25s, color 0.25s;
   display: flex;
 }
 /* button::secondary */
@@ -428,7 +437,6 @@ section {
   padding: 0.625rem 1rem;
   line-height: 1.25rem;
   text-decoration: none;
-  transition: background-color 0.25s, color 0.25s;
   display: flex;
 }
 /* button::light */
@@ -454,7 +462,6 @@ section {
   padding: 0.625rem 1rem;
   line-height: 1.25rem;
   text-decoration: none;
-  transition: background-color 0.25s, color 0.25s;
   display: flex;
 }
 
@@ -542,24 +549,23 @@ section {
   padding: 0.6rem 0.6rem 0.6rem 0.15rem;
   border: 1px solid var(--color-border);
   margin-left: 0;
-
   border-radius: 1.5rem;
   -webkit-border-radius: 1.5rem;
   -moz-border-radius: 1.5rem;
   -ms-border-radius: 1.5rem;
   -o-border-radius: 1.5rem;
-  transition: all 0.9s;
-  -webkit-transition: all 0.9s;
-  -moz-transition: all 0.9s;
-  -ms-transition: all 0.9s;
-  -o-transition: all 0.9s;
+  transition: var(--all-trans7);
+  -webkit-transition: var(--all-trans7);
+  -moz-transition: var(--all-trans7);
+  -ms-transition: var(--all-trans7);
+  -o-transition: var(--all-trans7);
 }
 .ntt-home .content-home .btn-title .fa {
-  transition: all ease-in-out 0.4s;
-  -webkit-transition: all ease-in-out 0.4s;
-  -moz-transition: all ease-in-out 0.4s;
-  -ms-transition: all ease-in-out 0.4s;
-  -o-transition: all ease-in-out 0.4s;
+  transition: var(--all-trans3);
+  -webkit-transition: var(--all-trans3);
+  -moz-transition: var(--all-trans3);
+  -ms-transition: var(--all-trans3);
+  -o-transition: var(--all-trans3);
 }
 .ntt-home .content-home .btn-title span {
   color: var(--color-light);
@@ -570,11 +576,11 @@ section {
   -moz-border-radius: 2.5rem;
   -ms-border-radius: 2.5rem;
   -o-border-radius: 2.5rem;
-  transition: all 0.9s;
-  -webkit-transition: all 0.9s;
-  -moz-transition: all 0.9s;
-  -ms-transition: all 0.9s;
-  -o-transition: all 0.9s;
+  transition: var(--all-trans7);
+  -webkit-transition: var(--all-trans7);
+  -moz-transition: var(--all-trans7);
+  -ms-transition: var(--all-trans7);
+  -o-transition: var(--all-trans7);
 }
 @media only screen and (max-width: 991px) {
   /* {home::button} */
@@ -597,7 +603,7 @@ section {
 /* {header} */
 
 .main_page {
-  padding: 0rem 2rem 0rem 2rem;
+  padding: 0rem 1rem 0rem 1rem;
   width: 100%;
 }
 .ntt_nav-custom {
@@ -605,20 +611,15 @@ section {
   padding: 0.5rem;
   position: fixed;
   z-index: 1011;
-  top: 2rem;
-  right: 2rem;
-  left: 2rem;
+  top: 1rem;
+  right: 1rem;
+  left: 1rem;
   background-color: var(--color-light);
   border-radius: 1rem;
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
-  transition: height 1s ease-in;
-  -webkit-transition: height 1s ease-in;
-  -moz-transition: height 1s ease-in;
-  -ms-transition: height 1s ease-in;
-  -o-transition: height 1s ease-in;
 }
 .nav_menu {
   margin: auto;
@@ -675,52 +676,6 @@ section {
   position: relative;
   height: 42px;
 }
-/* new  */
-
-.ntt-dropdown {
-  position: relative;
-  display: inline-block;
-}
-.ntt-dropdown .drop-box-text:hover {
-  background-color: var(--color-light-80);
-  border-radius: 0.5rem;
-  -webkit-border-radius: 0.5rem;
-  -moz-border-radius: 0.5rem;
-  -ms-border-radius: 0.5rem;
-  -o-border-radius: 0.5rem;
-}
-.drop-box-text {
-  padding: 7px;
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-}
-.ntt-dropdown-box .drop-link {
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-.ntt-dropdown-box {
-  display: none;
-  position: absolute;
-  min-width: 180px;
-  box-shadow: 0px 8px 16px 0px var(--color-dark25);
-  padding: 0.7rem;
-  z-index: 1;
-  background-color: var(--color-light);
-  text-align: start;
-}
-.ntt-dropdown:hover .ntt-dropdown-box {
-  display: block;
-  background-color: var(--color-light);
-  text-align: start;
-  border-radius: 1rem;
-  -webkit-border-radius: 1rem;
-  -moz-border-radius: 1rem;
-  -ms-border-radius: 1rem;
-  -o-border-radius: 1rem;
-}
 
 .ntt-mobiles {
   display: block;
@@ -741,10 +696,16 @@ section {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-
 .ntt_nav-dropdown {
   opacity: 0;
+  display: none;
   height: 0;
+  transition: var(--heightmx-trans7);
+  overflow: hidden;
+  -webkit-transition: var(--heightmx-trans7);
+  -moz-transition: var(--heightmx-trans7);
+  -ms-transition: var(--heightmx-trans7);
+  -o-transition: var(--heightmx-trans7);
 }
 .nav_add {
   display: none;
@@ -764,35 +725,32 @@ section {
     display: block;
     cursor: pointer;
   }
-  .ntt_nav-dropdown .bluelink {
-    transition: height 1s ease-in;
-    -webkit-transition: height 1s ease-in;
-    -moz-transition: height 1s ease-in;
-    -ms-transition: height 1s ease-in;
-    -o-transition: height 1s ease-in;
-  }
+
   .ntt_nav-dropdown {
     opacity: 0;
+    height: 0;
     max-height: 0;
-    transition: max-height 0.4s ease-in-out;
+    display: block;
+    transition: var(--heightmx-trans7);
     overflow: hidden;
-    -webkit-transition: max-height 0.4s ease-in-out;
-    -moz-transition: max-height 0.4s ease-in-out;
-    -ms-transition: max-height 0.4s ease-in-out;
-    -o-transition: max-height 0.4s ease-in-out;
+    -webkit-transition: var(--heightmx-trans7);
+    -moz-transition: var(--heightmx-trans7);
+    -ms-transition: var(--heightmx-trans7);
+    -o-transition: var(--heightmx-trans7);
   }
   .is-open {
     text-align: center;
-
+    position: relative;
     display: block;
     opacity: 1;
+    z-index: 1000;
     height: auto;
     max-height: 500px;
-    transition: max-height 0.4s ease-in-out;
-    -webkit-transition: max-height 0.4s ease-in-out;
-    -moz-transition: max-height 0.4s ease-in-out;
-    -ms-transition: max-height 0.4s ease-in-out;
-    -o-transition: max-height 0.4s ease-in-out;
+    transition: var(--heightmx-trans7);
+    -webkit-transition: var(--heightmx-trans7);
+    -moz-transition: var(--heightmx-trans7);
+    -ms-transition: var(--heightmx-trans7);
+    -o-transition: var(--heightmx-trans7);
   }
 }
 
@@ -819,11 +777,11 @@ section {
     margin-left: 10px;
     display: block;
     margin: 8px auto;
-    transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
+    transition: var(--all-trans3);
+    -webkit-transition: var(--all-trans3);
+    -o-transition: var(--all-trans3);
+    -moz-transition: var(--all-trans3);
+    -ms-transition: var(--all-trans3);
   }
   .hamburger .line.line-2 {
     width: 20px;
@@ -906,7 +864,6 @@ section {
   flex: 1;
   width: 100%;
   padding: 1px;
-  transition: background-color 1s;
   display: flex;
   position: relative;
   overflow: hidden;
@@ -946,7 +903,6 @@ section {
   flex: 1;
   width: 100%;
   padding: 1px;
-  transition: background-color 1s;
   display: flex;
   position: relative;
   overflow: hidden;
@@ -1067,7 +1023,6 @@ section {
   flex: 1;
   width: 100%;
   padding: 1px;
-  transition: background-color 1s;
   display: flex;
   position: relative;
   overflow: hidden;
@@ -1110,14 +1065,8 @@ section {
   text-align: center;
   overflow: hidden;
   position: relative;
-
   background-color: var(--color-light-40);
   backdrop-filter: blur(15px);
-  transition: 1s;
-  -webkit-transition: 1s;
-  -moz-transition: 1s;
-  -ms-transition: 1s;
-  -o-transition: 1s;
   border-radius: 1rem;
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
@@ -1132,11 +1081,6 @@ section {
   left: 0;
   top: 0;
   z-index: 1;
-  transition: 1s;
-  -webkit-transition: 1s;
-  -moz-transition: 1s;
-  -ms-transition: 1s;
-  -o-transition: 1s;
   border-radius: 1rem;
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
@@ -1206,7 +1150,6 @@ section {
   flex: 1;
   width: 100%;
   padding: 1px;
-  transition: background-color 1s;
   display: flex;
   position: relative;
   overflow: hidden;
@@ -1314,11 +1257,11 @@ section {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  transition: 0.5s all ease-in-out;
-  -webkit-transition: 0.5s all ease-in-out;
-  -moz-transition: 0.5s all ease-in-out;
-  -ms-transition: 0.5s all ease-in-out;
-  -o-transition: 0.5s all ease-in-out;
+  transition: var(--all-trans7);
+  -webkit-transition: var(--all-trans7);
+  -moz-transition: var(--all-trans7);
+  -ms-transition: var(--all-trans7);
+  -o-transition: var(--all-trans7);
 }
 .ntt_tag {
   z-index: 4;
@@ -1397,7 +1340,7 @@ footer {
   width: 100%;
   height: auto;
   display: flex;
-  position: relative;
+
   overflow: hidden;
 }
 .faq_ntt-wrapper {
@@ -1407,12 +1350,9 @@ footer {
   flex: 1;
   width: 100%;
   padding: 1px;
-  transition: background-color 1s;
   display: flex;
-  position: relative;
   overflow: hidden;
 }
-/* {services::content} */
 .faq_ntt-title {
   height: auto;
   align-content: start;
@@ -1424,84 +1364,57 @@ footer {
   padding-right: 10px;
 }
 /* accord */
-input {
-  position: absolute;
-  opacity: 0;
-  z-index: -1;
-}
-.accordion-wrapper {
-  overflow: hidden;
-  width: auto;
-  height: auto;
-  margin: 0 auto;
-  background-color: transparent;
-}
 .accordion {
-  text-align: center;
-  border: 1px solid var(--color-border);
-  width: 100%;
+  height: auto;
+}
+.accordion .accordion-content {
+  margin: 20px 0;
+  height: auto;
+  color: var(--color-dark);
   overflow: hidden;
-  margin-bottom: 16px;
-  border-radius: 1rem;
-  -webkit-border-radius: 1rem;
-  -moz-border-radius: 1rem;
-  -ms-border-radius: 1rem;
-  -o-border-radius: 1rem;
+  border-radius: 0.875rem;
+  -webkit-border-radius: 0.875rem;
+  -moz-border-radius: 0.875rem;
+  -ms-border-radius: 0.875rem;
+  -o-border-radius: 0.875rem;
 }
-.accordion-label .fa {
-  padding: 10px 10px 8px 10px;
-  margin: 0;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  transition: all ease-in-out 0.4s;
-  -webkit-transition: all ease-in-out 0.4s;
-  -moz-transition: all ease-in-out 0.4s;
-  -ms-transition: all ease-in-out 0.4s;
-  -o-transition: all ease-in-out 0.4s;
+
+.accordion-content.is-opens {
+  padding-bottom: 20px;
 }
-.accordion-label p {
-  padding-left: 10px;
-}
-.accordion-label {
+.accordion-content .acc-head {
   display: flex;
-  text-align: center;
-  align-items: center;
-  padding: 16px;
+  min-height: 50px;
+  padding: 0 15px;
   cursor: pointer;
-}
-.accordion-content {
-  max-height: 0;
-  text-align: start;
-  align-items: center;
-  padding: 0px 16px;
-  transition: all ease-in-out 0.4s;
-  -webkit-transition: all ease-in-out 0.4s;
-  -moz-transition: all ease-in-out 0.4s;
-  -ms-transition: all ease-in-out 0.4s;
-  -o-transition: all ease-in-out 0.4s;
-}
-.accordion-content p {
-  margin: 0;
-  padding-left: 50px;
-}
-input:checked + .accordion-label {
-  text-align: center;
   align-items: center;
 }
-input:checked + .accordion-label .fa {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
+
+.accordion-content-title {
+  color: var(--color-dark);
+  padding-left: 1rem;
 }
-input:checked ~ .accordion-content {
-  max-height: 100vh;
-  padding: 10px 10px 20px 10px;
+
+.accordion-content-description .fa-minus,
+.accordion-content-description .fa-plus {
+  transition: var(--all-trans3);
+  -webkit-transition: var(--all-trans3);
+  -moz-transition: var(--all-trans3);
+  -ms-transition: var(--all-trans3);
+  -o-transition: var(--all-trans3);
 }
+.accordion-content-description {
+  height: 0;
+  color: var(--color-dark);
+  padding-left: 2.7rem;
+  padding-right: 1rem;
+  transition: var(--height-trans3);
+  -webkit-transition: var(--height-trans3);
+  -moz-transition: var(--height-trans3);
+  -ms-transition: var(--height-trans3);
+  -o-transition: var(--height-trans3);
+}
+
 /*{tabs}*/
 .ntt_tabs .active {
   background-color: var(--color-red-Smooth);
@@ -1510,18 +1423,18 @@ input:checked ~ .accordion-content {
 .ntt_tabs-menu {
   position: sticky;
   position: -webkit-sticky;
-  top: 2rem;
+  top: 1rem;
   z-index: 1011;
   border-radius: 1rem;
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
-  transition: all ease-in-out 0.9s;
-  -webkit-transition: all ease-in-out 0.9s;
-  -moz-transition: all ease-in-out 0.9s;
-  -ms-transition: all ease-in-out 0.9s;
-  -o-transition: all ease-in-out 0.9s;
+  transition: var(--all-trans7);
+  -webkit-transition: var(--all-trans7);
+  -moz-transition: var(--all-trans7);
+  -ms-transition: var(--all-trans7);
+  -o-transition: var(--all-trans7);
 }
 
 .ntt_tabs {
@@ -1549,11 +1462,11 @@ input:checked ~ .accordion-content {
   -moz-border-radius: 0.5rem;
   -ms-border-radius: 0.5rem;
   -o-border-radius: 0.5rem;
-  transition: all ease-in-out 0.4s;
-  -webkit-transition: all ease-in-out 0.4s;
-  -moz-transition: all ease-in-out 0.4s;
-  -ms-transition: all ease-in-out 0.4s;
-  -o-transition: all ease-in-out 0.4s;
+  transition: var(--all-trans3);
+  -webkit-transition: var(--all-trans3);
+  -moz-transition: var(--all-trans3);
+  -ms-transition: var(--all-trans3);
+  -o-transition: var(--all-trans3);
 }
 .ntt_tabs-content {
   padding: 40px 0px 10px 0px;
@@ -1602,7 +1515,6 @@ input:checked ~ .accordion-content {
   flex: 1;
   width: 100%;
   padding: 1px;
-  transition: background-color 1s;
   display: flex;
   position: relative;
   overflow: hidden;
@@ -1645,7 +1557,6 @@ input:checked ~ .accordion-content {
   flex: 1;
   width: 100%;
   padding: 1px;
-  transition: background-color 1s;
   display: flex;
   position: relative;
   overflow: hidden;
