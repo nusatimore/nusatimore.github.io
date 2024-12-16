@@ -766,7 +766,6 @@ section {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     background-color: transparent;
-    padding-left: 0.7rem;
     text-align: center;
     border: transparent;
   }
@@ -774,7 +773,6 @@ section {
     width: 20px;
     height: 2px;
     background-color: var(--color-dark);
-    margin-left: 10px;
     display: block;
     margin: 8px auto;
     transition: var(--all-trans3);
